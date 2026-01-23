@@ -12,34 +12,34 @@ const TechStack = () => {
   ];
 
   return (
-    <section id="techstack" className="py-24 px-6 bg-gray-50">
+    <section id="techstack" className="py-16 sm:py-24 px-4 sm:px-6 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-light text-black mb-4 tracking-tight">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-black dark:text-white mb-4 tracking-tight">
             Tech Stack
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Modern tools and technologies I use to build production-grade systems
           </p>
         </div>
 
         {/* Tech Categories */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {categories.map((category, catIndex) => (
-            <div key={catIndex} className="bg-white p-8 rounded-lg border border-gray-200 hover:shadow-lg transition-all duration-300">
-              <h3 className="text-xl font-medium text-black mb-6">{category.title}</h3>
+            <div key={catIndex} className="bg-white dark:bg-gray-900 p-6 sm:p-8 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all duration-300">
+              <h3 className="text-lg sm:text-xl font-medium text-black dark:text-white mb-6">{category.title}</h3>
               <div className="space-y-4">
                 {category.items.map((tech, techIndex) => {
                   const IconComponent = LucideIcons[tech.icon];
                   return (
                     <div key={techIndex} className="flex items-center group">
-                      <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center mr-3 group-hover:bg-black transition-colors duration-200">
+                      <div className="w-10 h-10 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center mr-3 group-hover:bg-black dark:group-hover:bg-white transition-colors duration-200">
                         {IconComponent && (
-                          <IconComponent className="text-gray-700 group-hover:text-white transition-colors duration-200" size={20} />
+                          <IconComponent className="text-gray-700 dark:text-gray-300 group-hover:text-white dark:group-hover:text-black transition-colors duration-200" size={20} />
                         )}
                       </div>
-                      <span className="text-gray-700 font-medium">{tech.name}</span>
+                      <span className="text-sm sm:text-base text-gray-700 dark:text-gray-300 font-medium">{tech.name}</span>
                     </div>
                   );
                 })}
