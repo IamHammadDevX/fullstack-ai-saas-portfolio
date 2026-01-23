@@ -1,65 +1,70 @@
-# Hammad DevX | Full-Stack, AI & SaaS Developer Portfolio
+# Getting Started with Create React App
 
-👋 Hi, I’m **Hammad** — a Full-Stack AI & SaaS Developer building scalable, production-ready web applications and intelligent systems. I help businesses and startups transform ideas into live products that solve real problems and deliver measurable value.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
+## Available Scripts
 
-## 🌟 About Me
-I started my journey as a curious developer exploring code, which evolved into building real, production-ready solutions. Today, I work as a freelance engineer helping startups and businesses design, build, and scale high-impact digital products.
+In the project directory, you can run:
 
-My experience spans from academic projects to architecting **AI-powered SaaS platforms** and full-stack systems used by real companies. I focus on **clean architecture, scalability, and maintainability**, ensuring every project delivers business value.
+### `npm start`
 
-**What drives me:** Turning a client’s vision into a live, working product that generates revenue, automates workflows, or solves meaningful problems. I don’t just write code — I engineer **systems that last, scale, and perform**.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
----
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## 🛠️ Tech Stack
-- **Frontend:** React, TypeScript, Tailwind CSS, Bootstrap  
-- **Backend:** Node.js, Express.js, Python, Django  
-- **Databases:** MongoDB, PostgreSQL, SQLite  
-- **AI/ML:** Python, TensorFlow, PyTorch, NLP, CV  
-- **DevOps & Tools:** Docker, Kubernetes, Git, GitHub Actions  
+### `npm test`
 
----
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## 🚀 Featured Projects
+### `npm run build`
 
-| Project | Description | Tech Stack | Link |
-|---------|-------------|------------|------|
-| **AI Resume Screening System** | NLP-powered resume evaluation app for automated candidate ranking | Python, Streamlit, NLP | [Repo/Live] |
-| **Real-Time Stock Signal System** | Real-time stock monitoring and intelligent alerting via Telegram | Python, APIs | [Repo/Live] |
-| **Time Tracker System** | Productivity platform with desktop client & web admin portal | Node.js, Python | [Repo/Live] |
-| **FinTrade Trading Platform** | Professional trading platform with React frontend and Node.js backend | Node.js, React, Express.js | [Repo/Live] |
-| **AnonyChat-App** | Anonymous instant messaging platform with admin moderation | Node.js, React, Express.js | [Repo/Live] |
-| **Gas Distribution Management System** | Desktop-based management software for business operations | Python, PySide6, SQLite | [Repo/Live] |
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-> More projects are available in my [GitHub repositories](https://github.com/IamHammadDevX)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
----
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## ⭐ Highlights
-- Delivered **30+ production-ready SaaS and web solutions**  
-- Expert in **Full-Stack development with AI/ML integration**  
-- Strong focus on **scalable architecture and clean code**  
-- Fast, reliable delivery with **clear communication**  
+### `npm run eject`
 
----
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## 📫 Connect with Me
-- **Email:** [iamhammaddev03@gmail.com](mailto:iamhammaddev03@gmail.com)  
-- **LinkedIn:** [iamhammaddevx](https://linkedin.com/in/iamhammaddevx)  
-- **GitHub:** [IamHammadDevX](https://github.com/IamHammadDevX)  
-- **X (Twitter):** [@thisis_hammad](https://twitter.com/thisis_hammad)   
-- **CodeWars:** [IamHammadDevX](https://www.codewars.com/users/IamHammadDevX)  
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
----
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## 📖 How I Work
-1. Ship small, iterative releases and validate with users  
-2. Write tests and monitor production metrics  
-3. Automate deployments and data pipelines  
-4. Deliver **scalable, maintainable, and client-ready solutions**
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
----
+## Learn More
 
-> 💡 Looking to build a SaaS product, AI/ML solution, or data-driven platform? Let’s connect and bring your idea to life!
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
