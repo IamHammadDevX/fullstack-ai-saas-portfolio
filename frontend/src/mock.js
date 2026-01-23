@@ -6,7 +6,7 @@ export const personalInfo = {
   title: "Full-Stack AI & SaaS Engineer",
   tagline: "I build scalable SaaS & AI-powered systems that grow businesses.",
   description: "With 3.5+ years of experience, I transform ideas into production-ready SaaS products. From MVPs to enterprise-grade systems, I deliver clean, scalable architecture that businesses rely on.",
-  education: "Computer Science @ UET",
+  education: "Computer Science from University of Engineering and Technology, Lahore 2023-2027",
   experience: "3.5+ years",
   location: "Pakistan (Remote Worldwide)",
   availability: "Available for Freelance Projects"
