@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
+import { ThemeProvider } from './context/ThemeContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -19,21 +20,23 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Services />
-        <TechStack />
-        <Projects />
-        <GitHub />
-        <Testimonials />
-        <Process />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="App bg-white dark:bg-gray-900 min-h-screen transition-colors duration-300">
+        <Header />
+        <main>
+          <Hero />
+          <About />
+          <Services />
+          <TechStack />
+          <Projects />
+          <GitHub />
+          <Testimonials />
+          <Process />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 
