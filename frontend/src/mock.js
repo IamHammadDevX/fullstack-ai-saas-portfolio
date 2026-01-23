@@ -158,39 +158,57 @@ export const projects = [
 export const testimonials = [
   {
     id: 1,
-    name: "Sarah Mitchell",
-    role: "CEO, TechStart Inc",
-    company: "TechStart Inc",
+    name: "Nicholas O.",
+    role: "CEO & Founder",
+    company: "TechStart Inc, USA",
     text: "Hammad delivered our SaaS MVP in record time without cutting corners. His code quality and communication were exceptional. We've since hired him for three more projects.",
     rating: 5,
     platform: "Upwork"
   },
   {
     id: 2,
-    name: "David Chen",
-    role: "Founder, DataFlow Analytics",
-    company: "DataFlow Analytics",
+    name: "Saikat G.",
+    role: "Founder & CTO",
+    company: "DataFlow Analytics, New Zealand",
     text: "Working with Hammad was seamless. He understood our complex data pipeline requirements and built a solution that scaled beautifully. Highly technical and reliable.",
     rating: 5,
     platform: "Freelancer"
   },
   {
     id: 3,
-    name: "Emily Rodriguez",
-    role: "Product Manager, FinVest",
-    company: "FinVest",
+    name: "Kumar Visas",
+    role: "Product Manager",
+    company: "FinVest, USA (NY)",
     text: "Hammad transformed our trading platform. His attention to performance and user experience made a huge difference. The system handles thousands of concurrent users flawlessly.",
     rating: 5,
     platform: "Upwork"
   },
   {
     id: 4,
-    name: "Michael Brown",
-    role: "CTO, HR Solutions Co",
-    company: "HR Solutions Co",
+    name: "Saurav G.",
+    role: "CTO",
+    company: "HR Solutions Co, USA",
     text: "The AI resume screening system Hammad built saved our clients hundreds of hours. His ML expertise and ability to deliver production-ready code is outstanding.",
     rating: 5,
     platform: "Fiverr"
+  },
+  {
+    id: 5,
+    name: "Jason F.",
+    role: "VP Engineering",
+    company: "CloudTech Systems, USA",
+    text: "Hammad's expertise in full-stack development is remarkable. He delivered a complex real-time system with clean architecture and excellent documentation. Highly recommended!",
+    rating: 5,
+    platform: "Upwork"
+  },
+  {
+    id: 6,
+    name: "Harris Yaqoob",
+    role: "Founder",
+    company: "Digital Solutions, France",
+    text: "Outstanding developer! Hammad built our entire SaaS platform from scratch. His ability to understand business requirements and translate them into elegant code is impressive.",
+    rating: 5,
+    platform: "Freelancer"
   }
 ];
 
