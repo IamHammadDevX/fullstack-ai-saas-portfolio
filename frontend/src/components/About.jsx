@@ -20,7 +20,7 @@ const About = () => {
 
             {/* Education & Location */}
             <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 space-y-3">
-              <div className="flex items-center text-gray-700 dark:text-gray-300">
+              <div className="flex items-start text-gray-700 dark:text-gray-300">
                 <span className="font-medium mr-2">Education:</span>
                 <span>{personalInfo.education}</span>
               </div>
