@@ -19,7 +19,7 @@ What drives me? Seeing a client's vision transform into a live product that gene
 
 Every project I take on gets my full attention. Clean code, thoughtful architecture, and reliable delivery aren't just promises—they're how I work.`,
   highlights: [
-    "Shipped 15+ production SaaS products",
+    "Shipped 35+ production SaaS products",
     "Specialized in AI/ML system integration",
     "100% client satisfaction rate",
     "Fast turnaround without compromising quality"
