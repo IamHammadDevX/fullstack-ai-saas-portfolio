@@ -6,25 +6,30 @@ export const personalInfo = {
   title: "Full-Stack AI & SaaS Engineer",
   tagline: "I build scalable SaaS & AI-powered systems that grow businesses.",
   description: "With 3.5+ years of experience, I transform ideas into production-ready SaaS products. From MVPs to enterprise-grade systems, I deliver clean, scalable architecture that businesses rely on.",
-  education: "Computer Science from University of Engineering and Technology, Lahore 2023-2027",
+  education: "Computer Science, UET Lahore (2023–2027)",
   experience: "3.5+ years",
   location: "Pakistan (Remote Worldwide)",
   availability: "Available for Freelance Projects"
 };
 
 export const about = {
-  story: `I started as a curious developer exploring code, evolved into a product builder who ships real solutions, and now work as a freelance engineer helping businesses scale. My journey has taken me from building university projects to architecting AI-powered SaaS platforms used by real companies.
+  story: `Hi, I’m Hammad — a Full-Stack Developer Specializing in AI-Driven SaaS Platforms.
 
-What drives me? Seeing a client's vision transform into a live product that generates revenue and solves real problems. I don't just write code—I build systems that last, scale, and deliver business value.
+I started my journey as a curious developer exploring code, which naturally evolved into building real, production-ready solutions. Today, I work as a freelance engineer helping startups and businesses design, build, and scale high-impact digital products.
 
-Every project I take on gets my full attention. Clean code, thoughtful architecture, and reliable delivery aren't just promises—they're how I work.`,
+My experience spans from academic and experimental projects to architecting AI-powered SaaS platforms and full-stack systems used by real users and companies. I focus on clean architecture, scalability, and long-term maintainability rather than quick, fragile builds.
+
+What motivates me most is turning a client’s idea into a live product that delivers measurable business value—whether that’s generating revenue, improving efficiency, or automating complex workflows. I don’t just write code; I engineer systems built to last.
+
+Every project I take on receives my full attention. Clean code, thoughtful design, clear communication, and reliable delivery aren’t promises for me—they’re my standard.`,
   highlights: [
-    "Shipped 35+ production SaaS products",
-    "Specialized in AI/ML system integration",
-    "100% client satisfaction rate",
-    "Fast turnaround without compromising quality"
+    "Delivered 30+ production-ready web and SaaS solutions",
+    "Expert in Full-Stack development with AI/ML integration",
+    "Strong focus on scalable architecture and clean code",
+    "Fast, reliable delivery with clear communication"
   ]
 };
+
 
 export const services = [
   {
