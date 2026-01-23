@@ -233,12 +233,12 @@ export const process = [
 ];
 
 export const contact = {
-  email: "hammad@example.com",
+  email: "iamhammaddev03@gmail.com",
   social: [
-    { platform: "LinkedIn", url: "https://linkedin.com/in/hammaddevx", icon: "Linkedin" },
+    { platform: "LinkedIn", url: "https://linkedin.com/in/iamhammaddevx", icon: "Linkedin" },
     { platform: "GitHub", url: "https://github.com/IamHammadDevX", icon: "Github" },
-    { platform: "Twitter", url: "https://twitter.com/IamHammadDevX", icon: "Twitter" },
+    { platform: "Twitter", url: "https://x.com/thisis_hammad", icon: "Twitter" },
     { platform: "CodeWars", url: "https://www.codewars.com/users/IamHammadDevX", icon: "Code" },
-    { platform: "Instagram", url: "https://instagram.com/IamHammadDevX", icon: "Instagram" }
+    { platform: "Instagram", url: "https://instagram.com/hi_itshammad", icon: "Instagram" }
   ]
 };
