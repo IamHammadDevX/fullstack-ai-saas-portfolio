@@ -101,7 +101,7 @@ export const projects = [
     solution: "Built an AI-powered system using NLP to automatically parse, analyze, and rank resumes based on job requirements. Integrated with ATS platforms for seamless workflow.",
     tech: ["Python", "TensorFlow", "NLP", "FastAPI", "React"],
     outcome: "Reduced screening time by 85%, improved candidate quality, and helped clients hire faster.",
-    image: "/api/placeholder/600/400"
+    image: "https://images.unsplash.com/photo-1763718528755-4bca23f82ac3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwxfHxBSSUyMHJlY3J1aXRtZW50fGVufDB8fHx8MTc2OTE4Mjg4N3ww&ixlib=rb-4.1.0&q=85"
   },
   {
     id: 2,
@@ -111,7 +111,7 @@ export const projects = [
     solution: "Developed a real-time data processing engine that analyzes market data streams, applies custom algorithms, and sends instant signals via WebSocket and mobile push notifications.",
     tech: ["Node.js", "WebSocket", "MongoDB", "React", "Chart.js"],
     outcome: "Processed 50K+ signals daily with <100ms latency. Active user base of 2,000+ traders.",
-    image: "/api/placeholder/600/400"
+    image: "https://images.unsplash.com/photo-1761850167081-473019536383?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxzdG9jayUyMHRyYWRpbmclMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzY5MTgyODk1fDA&ixlib=rb-4.1.0&q=85"
   },
   {
     id: 3,
@@ -121,7 +121,7 @@ export const projects = [
     solution: "Built a full-featured time tracking platform with team management, project analytics, invoice generation, and integrations with popular tools.",
     tech: ["MERN Stack", "JWT Auth", "Stripe API", "Chart.js"],
     outcome: "30+ paying customers in first 3 months. 95% user retention rate.",
-    image: "/api/placeholder/600/400"
+    image: "https://images.unsplash.com/photo-1671109704725-ad6d94cd723c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwzfHx0aW1lJTIwdHJhY2tpbmd8ZW58MHx8fHwxNzY5MTgyOTAyfDA&ixlib=rb-4.1.0&q=85"
   },
   {
     id: 4,
@@ -131,7 +131,7 @@ export const projects = [
     solution: "Created a comprehensive trading platform with real-time quotes, portfolio analytics, risk assessment, and automated trading strategies.",
     tech: ["React", "TypeScript", "Node.js", "PostgreSQL", "WebSocket"],
     outcome: "Handles 10K+ daily transactions. 99.9% uptime with robust error handling.",
-    image: "/api/placeholder/600/400"
+    image: "https://images.unsplash.com/photo-1766218334217-d2cc74c36fce?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwzfHx0cmFkaW5nJTIwcGxhdGZvcm18ZW58MHx8fHwxNzY5MTgyOTI0fDA&ixlib=rb-4.1.0&q=85"
   },
   {
     id: 5,
@@ -141,7 +141,7 @@ export const projects = [
     solution: "Built an end-to-end encrypted messaging platform with no user data storage, temporary chat rooms, and automatic message deletion.",
     tech: ["Node.js", "Socket.io", "React", "MongoDB", "Encryption"],
     outcome: "20K+ active users. Zero data breaches. Featured in privacy-focused communities.",
-    image: "/api/placeholder/600/400"
+    image: "https://images.unsplash.com/photo-1762330469637-dfbb6e014a16?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxzZWN1cmUlMjBtZXNzYWdpbmd8ZW58MHx8fHwxNzY5MTgyOTA5fDA&ixlib=rb-4.1.0&q=85"
   },
   {
     id: 6,
@@ -151,7 +151,7 @@ export const projects = [
     solution: "Developed an enterprise system for order management, inventory tracking, delivery route optimization, and real-time driver coordination.",
     tech: ["Django", "PostgreSQL", "React", "Google Maps API"],
     outcome: "30% reduction in delivery time. 40% improvement in route efficiency. Scaled to 100+ drivers.",
-    image: "/api/placeholder/600/400"
+    image: "https://images.unsplash.com/photo-1726776230751-183496c51f00?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjBtYW5hZ2VtZW50fGVufDB8fHx8MTc2OTE4MjkxNnww&ixlib=rb-4.1.0&q=85"
   }
 ];
 
