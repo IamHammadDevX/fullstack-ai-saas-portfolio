@@ -18,7 +18,7 @@ const Contact = () => {
           viewport={{ once: true }}
           className="mb-12 flex justify-center"
         >
-          <div className="glass-card inline-flex items-center rounded-full border border-emerald-200 px-5 py-2.5 shadow-sm dark:border-emerald-400/20">
+          <div className="glass-card inline-flex max-w-full flex-wrap items-center justify-center rounded-[1.25rem] border border-emerald-200 px-5 py-2.5 text-center shadow-sm sm:rounded-full dark:border-emerald-400/20">
             <span className="relative mr-3 flex h-3 w-3">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
               <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500"></span>
@@ -34,20 +34,20 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ type: 'spring', stiffness: 100, damping: 20 }}
-          className="group relative mb-16 overflow-hidden rounded-[2.5rem] bg-slate-950 p-10 text-center text-white shadow-2xl shadow-slate-900/15 sm:p-16 dark:bg-slate-900"
+          className="group relative mb-16 overflow-hidden rounded-[2rem] bg-slate-950 p-6 text-center text-white shadow-2xl shadow-slate-900/15 sm:rounded-[2.5rem] sm:p-16 dark:bg-slate-900"
         >
           <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-tr from-white/0 via-white/10 to-white/0 transition-transform duration-1000 ease-in-out group-hover:translate-x-[100%]" />
 
           <Sparkles className="mx-auto mb-8 h-12 w-12 text-cyan-300" />
 
-          <h2 className="relative z-10 mb-6 text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
+          <h2 className="relative z-10 mb-6 text-[2.4rem] font-bold tracking-tighter min-[420px]:text-4xl sm:text-5xl md:text-6xl">
             Let's Build Something Great
           </h2>
           <p className="relative z-10 mx-auto mb-10 max-w-2xl text-lg font-medium text-slate-300 sm:text-xl">
             Have a project in mind? I'm ready to turn your vision into reality with modern tech and clean code.
           </p>
-          <a href={`mailto:${contact.email}`} className="relative z-10 inline-block">
-            <Button className="group/btn rounded-full border-none bg-white px-8 py-7 text-lg font-semibold text-slate-900 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-slate-100 hover:shadow-2xl dark:bg-cyan-300 dark:text-slate-950 dark:hover:bg-cyan-200">
+          <a href={`mailto:${contact.email}`} className="relative z-10 inline-block w-full sm:w-auto">
+            <Button className="group/btn w-full rounded-full border-none bg-white px-8 py-7 text-lg font-semibold text-slate-900 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-slate-100 hover:shadow-2xl sm:w-auto dark:bg-cyan-300 dark:text-slate-950 dark:hover:bg-cyan-200">
               <Mail className="mr-3 h-6 w-6 transition-transform group-hover/btn:scale-110" />
               Say Hello
               <ArrowRight className="ml-3 h-6 w-6 transition-transform group-hover/btn:translate-x-1" />

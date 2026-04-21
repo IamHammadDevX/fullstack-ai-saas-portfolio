@@ -69,7 +69,7 @@
 
 .section-shell {
   position: relative;
-  padding: 6rem 1rem;
+  padding: 5rem 1rem;
 }
 
 .section-shell--muted {
@@ -115,17 +115,18 @@
 }
 
 .section-title {
-  font-size: clamp(2.4rem, 5vw, 4rem);
-  line-height: 0.98;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.02;
   margin: 0;
+  overflow-wrap: anywhere;
 }
 
 .section-copy {
   margin-top: 1.25rem;
   max-width: 42rem;
   color: rgb(71 85 105);
-  font-size: 1.05rem;
-  line-height: 1.75;
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
 .dark .section-copy {
@@ -175,5 +176,10 @@
 @media (min-width: 640px) {
   .section-shell {
     padding: 7rem 1.5rem;
+  }
+
+  .section-copy {
+    font-size: 1.05rem;
+    line-height: 1.75;
   }
 }

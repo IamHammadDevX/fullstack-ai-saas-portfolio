@@ -23,7 +23,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="section-shell flex min-h-screen items-center overflow-hidden pt-24 sm:pt-28">
+    <section id="hero" className="section-shell flex min-h-[100svh] items-center overflow-hidden pt-24 sm:pt-28">
       <div className="absolute inset-x-0 top-0 h-[34rem] bg-gradient-to-b from-cyan-200/30 via-transparent to-transparent dark:from-cyan-500/10" />
       <div className="absolute left-[8%] top-24 h-52 w-52 rounded-full bg-cyan-400/20 blur-3xl dark:bg-cyan-400/15" />
       <div className="absolute bottom-12 right-[6%] h-64 w-64 rounded-full bg-teal-400/20 blur-3xl dark:bg-teal-400/12" />
@@ -42,7 +42,7 @@ const Hero = () => {
 
           <motion.h1
             variants={itemVariants}
-            className="max-w-4xl text-5xl font-bold leading-[0.95] text-slate-950 dark:text-slate-50 sm:text-6xl lg:text-7xl xl:text-[5.4rem]"
+            className="max-w-4xl text-[2.7rem] font-bold leading-[0.98] text-slate-950 dark:text-slate-50 min-[420px]:text-5xl sm:text-6xl lg:text-7xl xl:text-[5.4rem]"
           >
             Modern AI and SaaS products,
             <span className="block bg-gradient-to-r from-cyan-500 via-sky-500 to-teal-500 bg-clip-text text-transparent">
@@ -55,7 +55,7 @@ const Hero = () => {
             href="https://thevulnguardai.tech"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-6 inline-flex w-fit items-center gap-3 rounded-full bg-slate-950 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-slate-900/15 transition-transform hover:-translate-y-0.5 hover:bg-slate-900 dark:bg-slate-900 dark:text-slate-100"
+            className="mt-6 inline-flex w-full max-w-full flex-wrap items-center justify-center gap-3 rounded-[1.25rem] bg-slate-950 px-4 py-3 text-center text-sm font-semibold text-white shadow-lg shadow-slate-900/15 transition-transform hover:-translate-y-0.5 hover:bg-slate-900 sm:w-fit sm:flex-nowrap sm:justify-start sm:rounded-full sm:py-2.5 sm:text-left dark:bg-slate-900 dark:text-slate-100"
           >
             <span className="relative flex h-3 w-3">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" />
@@ -75,7 +75,7 @@ const Hero = () => {
           <motion.div variants={itemVariants} className="mt-10 flex flex-col gap-4 sm:flex-row">
             <Button
               onClick={() => scrollToSection('#contact')}
-              className="group h-14 rounded-full bg-slate-950 px-8 text-base font-semibold text-white shadow-2xl shadow-slate-900/15 hover:-translate-y-1 hover:bg-slate-800 dark:bg-cyan-300 dark:text-slate-950 dark:shadow-cyan-900/20 dark:hover:bg-cyan-200"
+              className="group h-14 w-full rounded-full bg-slate-950 px-8 text-base font-semibold text-white shadow-2xl shadow-slate-900/15 hover:-translate-y-1 hover:bg-slate-800 sm:w-auto dark:bg-cyan-300 dark:text-slate-950 dark:shadow-cyan-900/20 dark:hover:bg-cyan-200"
             >
               Start a Project
               <ArrowRight className="transition-transform group-hover:translate-x-1" size={18} />
@@ -84,7 +84,7 @@ const Hero = () => {
             <Button
               onClick={() => scrollToSection('#projects')}
               variant="outline"
-              className="h-14 rounded-full border-slate-300/80 bg-white/50 px-8 text-base font-semibold text-slate-700 hover:-translate-y-1 hover:bg-white dark:border-slate-700 dark:bg-slate-900/40 dark:text-slate-200 dark:hover:bg-slate-900/70"
+              className="h-14 w-full rounded-full border-slate-300/80 bg-white/50 px-8 text-base font-semibold text-slate-700 hover:-translate-y-1 hover:bg-white sm:w-auto dark:border-slate-700 dark:bg-slate-900/40 dark:text-slate-200 dark:hover:bg-slate-900/70"
             >
               View Work
             </Button>
@@ -113,16 +113,16 @@ const Hero = () => {
 
         <motion.div variants={itemVariants} className="relative z-10">
           <div className="glass-card overflow-hidden rounded-[2rem] p-6 sm:p-8">
-            <div className="flex items-center justify-between rounded-[1.5rem] border border-white/40 bg-white/70 p-4 dark:border-slate-800/80 dark:bg-slate-900/70">
+            <div className="flex flex-col gap-4 rounded-[1.5rem] border border-white/40 bg-white/70 p-4 sm:flex-row sm:items-center sm:justify-between dark:border-slate-800/80 dark:bg-slate-900/70">
               <div>
                 <div className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
                   Project Focus
                 </div>
-                <div className="mt-2 text-2xl font-bold text-slate-950 dark:text-white">
+                <div className="mt-2 text-xl font-bold text-slate-950 dark:text-white min-[420px]:text-2xl">
                   Build with strategy, polish, and speed.
                 </div>
               </div>
-              <div className="rounded-2xl bg-slate-950 p-3 text-white dark:bg-cyan-300 dark:text-slate-950">
+              <div className="w-fit rounded-2xl bg-slate-950 p-3 text-white dark:bg-cyan-300 dark:text-slate-950">
                 <BriefcaseBusiness size={28} />
               </div>
             </div>

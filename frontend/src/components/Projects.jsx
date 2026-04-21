@@ -62,7 +62,7 @@ const Projects = () => {
         </motion.div>
 
         {/* Projects Grid */}
-        <motion.div layout className="grid lg:grid-cols-2 gap-8 sm:gap-10">
+        <motion.div layout className="grid gap-8 sm:gap-10 lg:grid-cols-2">
           <AnimatePresence mode='popLayout'>
             {filteredProjects.map((project) => (
               <motion.div
@@ -110,11 +110,11 @@ const Projects = () => {
                             </Badge>
                           )}
                         </div>
-                        <CardTitle className="mb-2 text-2xl font-bold text-slate-950 dark:text-white sm:text-3xl">
+                        <CardTitle className="mb-2 break-words text-2xl font-bold text-slate-950 dark:text-white sm:text-3xl">
                           {project.title}
                         </CardTitle>
                         {project.tagline && (
-                          <p className="text-sm font-semibold text-slate-500 dark:text-slate-400">
+                          <p className="break-words text-sm font-semibold text-slate-500 dark:text-slate-400">
                             {project.tagline}
                           </p>
                         )}
@@ -123,7 +123,7 @@ const Projects = () => {
                   </CardHeader>
 
                   <CardContent className="px-8 pb-8 space-y-6">
-                    <div className="grid gap-6 sm:grid-cols-2">
+                    <div className="grid gap-6 md:grid-cols-2">
                       <div className="space-y-4">
                         <div>
                           <h4 className="mb-2 text-sm font-bold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">Challenge</h4>

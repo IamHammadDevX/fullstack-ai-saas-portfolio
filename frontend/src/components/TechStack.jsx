@@ -49,19 +49,19 @@ const TechStack = () => {
                 {category.title}
               </h3>
               
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-4 min-[430px]:grid-cols-2 md:grid-cols-1 min-[1180px]:grid-cols-2">
                 {category.items.map((tech, techIndex) => {
                   const IconComponent = LucideIcons[tech.icon] || LucideIcons.Terminal;
                   return (
                     <motion.div 
                       key={techIndex} 
                       whileHover={{ scale: 1.05 }}
-                      className="surface-card flex cursor-default items-center rounded-2xl p-3 transition-all hover:shadow-md"
+                      className="surface-card flex min-w-0 cursor-default items-center rounded-2xl p-3 transition-all hover:shadow-md"
                     >
                       <div className="mr-3 text-cyan-600 dark:text-cyan-300">
                         <IconComponent strokeWidth={1.5} size={20} />
                       </div>
-                      <span className="text-sm font-semibold text-slate-800 dark:text-slate-200">{tech.name}</span>
+                      <span className="min-w-0 break-words text-sm font-semibold text-slate-800 dark:text-slate-200">{tech.name}</span>
                     </motion.div>
                   );
                 })}

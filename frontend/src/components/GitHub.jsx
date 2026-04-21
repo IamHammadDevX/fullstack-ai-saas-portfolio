@@ -30,17 +30,17 @@ const GitHub = () => {
         <div className="mt-16 grid gap-8 xl:grid-cols-[1.15fr_0.85fr]">
           <Card className="glass-card overflow-hidden rounded-[2.25rem] border-0">
             <CardContent className="p-0">
-              <div className="relative overflow-hidden rounded-[2.25rem] bg-slate-950 p-8 text-white sm:p-10">
+              <div className="relative overflow-hidden rounded-[2.25rem] bg-slate-950 p-6 text-white sm:p-10">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,211,238,0.18),transparent_35%),radial-gradient(circle_at_bottom_left,rgba(20,184,166,0.16),transparent_30%)]" />
                 <div className="relative z-10">
-                  <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-cyan-200">
+                  <div className="inline-flex max-w-full flex-wrap items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-cyan-200">
                     <Sparkles size={14} />
                     Shipping in Public
                   </div>
 
                   <div className="mt-6 grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">
                     <div>
-                      <h3 className="text-3xl font-bold tracking-tight sm:text-4xl">
+                      <h3 className="text-2xl font-bold tracking-tight min-[420px]:text-3xl sm:text-4xl">
                         Real engineering momentum, not vanity numbers.
                       </h3>
                       <p className="mt-4 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
@@ -52,7 +52,7 @@ const GitHub = () => {
                       <div className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">
                         Current Streak
                       </div>
-                      <div className="mt-3 text-4xl font-bold text-white">
+                      <div className="mt-3 text-3xl font-bold text-white min-[420px]:text-4xl">
                         {githubStats.contributionStreak}
                         <span className="ml-2 text-lg font-semibold text-cyan-200">days</span>
                       </div>
@@ -63,7 +63,7 @@ const GitHub = () => {
                     </div>
                   </div>
 
-                  <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+                  <div className="mt-8 grid gap-4 min-[430px]:grid-cols-2 xl:grid-cols-4">
                     {stats.map((stat, index) => {
                       const IconComponent = stat.icon;
 
@@ -90,8 +90,8 @@ const GitHub = () => {
 
           <div className="grid gap-8">
             <Card className="surface-card rounded-[2.25rem] border-0 overflow-hidden">
-              <CardContent className="p-8 sm:p-10">
-                <div className="flex items-center justify-between gap-4">
+              <CardContent className="p-6 sm:p-10">
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                   <div>
                     <div className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-300">
                       Language Mix
@@ -100,7 +100,7 @@ const GitHub = () => {
                       Top Languages
                     </h3>
                   </div>
-                  <div className="rounded-2xl bg-cyan-100 p-3 text-cyan-700 dark:bg-cyan-400/10 dark:text-cyan-300">
+                  <div className="w-fit rounded-2xl bg-cyan-100 p-3 text-cyan-700 dark:bg-cyan-400/10 dark:text-cyan-300">
                     <GitBranch size={22} />
                   </div>
                 </div>
@@ -125,7 +125,7 @@ const GitHub = () => {
             </Card>
 
             <Card className="glass-card rounded-[2.25rem] border-0">
-              <CardContent className="p-8 sm:p-10">
+              <CardContent className="p-6 sm:p-10">
                 <div className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-300">
                   Contribution Style
                 </div>
@@ -136,7 +136,7 @@ const GitHub = () => {
                   My contribution pattern reflects how I work overall: consistent delivery, iterative improvement, and shipping features that support real users and real business needs.
                 </p>
 
-                <div className="mt-8 grid gap-4 sm:grid-cols-3">
+                <div className="mt-8 grid gap-4 min-[430px]:grid-cols-2 sm:grid-cols-3">
                   {[
                     { label: 'Build Rhythm', value: 'Weekly' },
                     { label: 'Focus Area', value: 'Systems + UX' },

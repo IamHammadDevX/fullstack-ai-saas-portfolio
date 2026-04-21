@@ -39,15 +39,15 @@ const Header = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 100, damping: 20 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 px-2 pt-2 transition-all duration-500 sm:px-0 sm:pt-0 ${
         isScrolled 
           ? 'py-3'
           : 'py-5'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6">
         <div
-          className={`flex items-center justify-between rounded-full border px-3 py-2 transition-all duration-500 ${
+          className={`flex items-center justify-between rounded-full border px-2.5 py-2 transition-all duration-500 sm:px-3 ${
             isScrolled
               ? 'glass-card border-white/30 dark:border-slate-800/80 shadow-2xl'
               : 'border-transparent bg-transparent'
@@ -61,7 +61,7 @@ const Header = () => {
             <span className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-sm text-white shadow-lg dark:bg-cyan-300 dark:text-slate-950">
               H
             </span>
-            <span>
+            <span className="hidden min-[360px]:inline">
               Hammad<span className="text-cyan-600 dark:text-cyan-300">.dev</span>
             </span>
           </a>
@@ -113,14 +113,14 @@ const Header = () => {
           <div className="flex items-center gap-3 md:hidden">
             <button
               onClick={toggleTheme}
-              className="focus-ring glass-card flex h-11 w-11 items-center justify-center rounded-full text-slate-600 dark:text-slate-300"
+              className="focus-ring glass-card flex h-10 w-10 items-center justify-center rounded-full text-slate-600 dark:text-slate-300 min-[380px]:h-11 min-[380px]:w-11"
               aria-label="Toggle theme"
             >
               {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
             </button>
 
             <button
-              className="focus-ring glass-card flex h-11 w-11 items-center justify-center rounded-full text-slate-900 dark:text-white"
+              className="focus-ring glass-card flex h-10 w-10 items-center justify-center rounded-full text-slate-900 dark:text-white min-[380px]:h-11 min-[380px]:w-11"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle menu"
             >
