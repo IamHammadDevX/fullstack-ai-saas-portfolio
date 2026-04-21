@@ -1,0 +1,27 @@
+{
+  "short_name": "Hammad",
+  "name": "Hammad | Full-Stack AI & SaaS Developer Portfolio",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/favicon-32x32.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/favicon-16x16.svg",
+      "sizes": "16x16",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#08111f",
+  "background_color": "#08111f",
+  "display": "standalone",
+  "start_url": "/",
+  "description": "Hammad's modern full-stack AI and SaaS engineering portfolio."
+}
+
