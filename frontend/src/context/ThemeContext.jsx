@@ -29,10 +29,13 @@ export const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     const root = document.documentElement;
+    const themeColor = document.querySelector('meta[name="theme-color"]');
     if (theme === 'dark') {
       root.classList.add('dark');
+      themeColor?.setAttribute('content', '#08111f');
     } else {
       root.classList.remove('dark');
+      themeColor?.setAttribute('content', '#eef6ff');
     }
     localStorage.setItem('theme', theme);
   }, [theme]);

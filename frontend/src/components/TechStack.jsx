@@ -1,50 +1,70 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { techStack } from '../mock';
 import * as LucideIcons from 'lucide-react';
 
 const TechStack = () => {
   const categories = [
-    { title: 'Frontend', items: techStack.frontend, color: 'bg-gray-100' },
-    { title: 'Backend', items: techStack.backend, color: 'bg-gray-100' },
-    { title: 'Database', items: techStack.database, color: 'bg-gray-100' },
-    { title: 'AI/ML', items: techStack.aiml, color: 'bg-gray-100' },
-    { title: 'DevOps', items: techStack.devops, color: 'bg-gray-100' }
+    { title: 'Frontend', items: techStack.frontend, delay: 0.1 },
+    { title: 'Backend', items: techStack.backend, delay: 0.2 },
+    { title: 'Database', items: techStack.database, delay: 0.3 },
+    { title: 'AI/ML', items: techStack.aiml, delay: 0.4 },
+    { title: 'DevOps', items: techStack.devops, delay: 0.5 }
   ];
 
   return (
-    <section id="techstack" className="py-16 sm:py-24 px-4 sm:px-6 bg-gray-50 dark:bg-gray-800">
-      <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
-        <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-black dark:text-white mb-4 tracking-tight">
-            Tech Stack
+    <section id="techstack" className="section-shell section-shell--muted relative overflow-hidden">
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(148,163,184,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.1)_1px,transparent_1px)] bg-[size:28px_28px] opacity-60 dark:bg-[linear-gradient(to_right,rgba(148,163,184,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.08)_1px,transparent_1px)]" />
+
+      <div className="section-container">
+        <motion.div 
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          className="mx-auto mb-16 max-w-3xl text-center sm:mb-24"
+        >
+          <span className="section-kicker">Tech Stack</span>
+          <h2 className="section-title text-slate-950 dark:text-slate-50">
+            Tools chosen for speed, scale, and maintainability.
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="section-copy mx-auto">
             Modern tools and technologies I use to build production-grade systems
           </p>
-        </div>
+        </motion.div>
 
-        {/* Tech Categories */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {categories.map((category, catIndex) => (
-            <div key={catIndex} className="bg-white dark:bg-gray-900 p-6 sm:p-8 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all duration-300">
-              <h3 className="text-lg sm:text-xl font-medium text-black dark:text-white mb-6">{category.title}</h3>
-              <div className="space-y-4">
+            <motion.div 
+              key={catIndex} 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: category.delay }}
+              className="glass-card group rounded-[2rem] p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 className="mb-8 flex items-center text-xl font-bold tracking-tight text-slate-950 dark:text-white">
+                <span className="mr-4 h-1 w-8 rounded-full bg-cyan-500 transition-all duration-300 group-hover:w-12" />
+                {category.title}
+              </h3>
+              
+              <div className="grid grid-cols-2 gap-4">
                 {category.items.map((tech, techIndex) => {
-                  const IconComponent = LucideIcons[tech.icon];
+                  const IconComponent = LucideIcons[tech.icon] || LucideIcons.Terminal;
                   return (
-                    <div key={techIndex} className="flex items-center group">
-                      <div className="w-10 h-10 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center mr-3 group-hover:bg-black dark:group-hover:bg-white transition-colors duration-200">
-                        {IconComponent && (
-                          <IconComponent className="text-gray-700 dark:text-gray-300 group-hover:text-white dark:group-hover:text-black transition-colors duration-200" size={20} />
-                        )}
+                    <motion.div 
+                      key={techIndex} 
+                      whileHover={{ scale: 1.05 }}
+                      className="surface-card flex cursor-default items-center rounded-2xl p-3 transition-all hover:shadow-md"
+                    >
+                      <div className="mr-3 text-cyan-600 dark:text-cyan-300">
+                        <IconComponent strokeWidth={1.5} size={20} />
                       </div>
-                      <span className="text-sm sm:text-base text-gray-700 dark:text-gray-300 font-medium">{tech.name}</span>
-                    </div>
+                      <span className="text-sm font-semibold text-slate-800 dark:text-slate-200">{tech.name}</span>
+                    </motion.div>
                   );
                 })}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

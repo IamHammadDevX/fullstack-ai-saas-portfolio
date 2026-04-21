@@ -21,9 +21,10 @@ function App() {
 
   return (
     <ThemeProvider>
-      <div className="App bg-white dark:bg-gray-900 min-h-screen transition-colors duration-300">
+      <div className="App app-shell transition-colors duration-300">
+        <div className="app-noise" aria-hidden="true" />
         <Header />
-        <main>
+        <main className="app-main">
           <Hero />
           <About />
           <Services />

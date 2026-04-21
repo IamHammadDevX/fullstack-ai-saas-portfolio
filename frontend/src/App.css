@@ -1,21 +1,7 @@
 .App {
   min-height: 100vh;
-  background-color: #ffffff;
 }
 
-/* Smooth transitions for all interactive elements */
-* {
-  transition-property: color, background-color, border-color, transform, box-shadow;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 200ms;
-}
-
-/* Remove transition from transforms to prevent breaking animations */
-*:not(button):not(a):not(.hover-effect) {
-  transition-property: color, background-color, border-color, box-shadow;
-}
-
-/* Custom animations */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -31,37 +17,163 @@
   animation: fade-in 0.6s ease-out;
 }
 
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
+.app-shell {
+  position: relative;
+  min-height: 100vh;
+  overflow: clip;
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
+.app-shell::before,
+.app-shell::after {
+  content: "";
+  position: fixed;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 999px;
+  filter: blur(80px);
 }
 
-::-webkit-scrollbar-track {
-  background: #f5f5f5;
+.app-shell::before {
+  top: 6rem;
+  right: -8rem;
+  width: 18rem;
+  height: 18rem;
+  background: rgba(56, 189, 248, 0.18);
 }
 
-::-webkit-scrollbar-thumb {
-  background: #000000;
-  border-radius: 5px;
+.app-shell::after {
+  bottom: 8rem;
+  left: -6rem;
+  width: 16rem;
+  height: 16rem;
+  background: rgba(20, 184, 166, 0.14);
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #333333;
+.app-noise {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(circle at center, black 35%, transparent 90%);
 }
 
-/* Focus styles for accessibility */
-button:focus-visible,
-a:focus-visible {
-  outline: 2px solid #000000;
-  outline-offset: 2px;
+.app-main {
+  position: relative;
+  z-index: 1;
 }
 
-/* Ensure text remains readable */
-.App {
-  color: #000000;
+.section-shell {
+  position: relative;
+  padding: 6rem 1rem;
+}
+
+.section-shell--muted {
+  background: linear-gradient(
+    180deg,
+    transparent,
+    color-mix(in srgb, var(--surface-soft) 82%, transparent)
+  );
+}
+
+.section-shell--dark {
+  background:
+    radial-gradient(circle at top right, rgba(56, 189, 248, 0.12), transparent 22rem),
+    linear-gradient(180deg, rgba(15, 23, 42, 0.05), transparent);
+}
+
+.section-container {
+  position: relative;
+  z-index: 1;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
+  padding: 0.55rem 0.95rem;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 999px;
+  background: var(--surface-soft);
+  backdrop-filter: blur(18px);
+  color: rgb(14 116 144);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.dark .section-kicker {
+  color: rgb(103 232 249);
+}
+
+.section-title {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 0.98;
+  margin: 0;
+}
+
+.section-copy {
+  margin-top: 1.25rem;
+  max-width: 42rem;
+  color: rgb(71 85 105);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.dark .section-copy {
+  color: rgb(148 163 184);
+}
+
+.glass-card {
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: var(--surface-soft);
+  box-shadow:
+    0 18px 60px rgba(15, 23, 42, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(18px);
+}
+
+.dark .glass-card {
+  box-shadow:
+    0 22px 65px rgba(2, 6, 23, 0.38),
+    inset 0 1px 0 rgba(148, 163, 184, 0.08);
+}
+
+.surface-card {
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: var(--surface-strong);
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+}
+
+.dark .surface-card {
+  box-shadow: 0 24px 70px rgba(2, 6, 23, 0.34);
+}
+
+.metric-card {
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+}
+
+.dark .metric-card {
+  background: rgba(15, 23, 42, 0.55);
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid rgba(56, 189, 248, 0.8);
+  outline-offset: 3px;
+}
+
+@media (min-width: 640px) {
+  .section-shell {
+    padding: 7rem 1.5rem;
+  }
 }

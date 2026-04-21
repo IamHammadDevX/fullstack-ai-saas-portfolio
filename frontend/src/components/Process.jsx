@@ -1,57 +1,73 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { process } from '../mock';
-import { CheckCircle2 } from 'lucide-react';
 
 const Process = () => {
   return (
-    <section id="process" className="py-16 sm:py-24 px-4 sm:px-6 bg-gray-50 dark:bg-gray-800">
-      <div className="max-w-6xl mx-auto">
-        {/* Section Header */}
-        <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-black dark:text-white mb-4 tracking-tight">
-            How I Work
+    <section id="process" className="section-shell">
+      <div className="section-container max-w-4xl">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-20 text-center sm:mb-24"
+        >
+          <span className="section-kicker">Process</span>
+          <h2 className="section-title text-slate-950 dark:text-slate-50">
+            A workflow that keeps projects clear, calm, and moving.
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            A proven process that delivers results
+          <p className="section-copy mx-auto">
+            A proven process that delivers robust AI SaaS solutions
           </p>
-        </div>
+        </motion.div>
 
-        {/* Process Steps */}
-        <div className="space-y-6 sm:space-y-8">
+        <div className="relative ml-6 space-y-16 border-l-2 border-slate-200 md:ml-12 sm:space-y-24 dark:border-slate-800">
           {process.map((step, index) => (
-            <div
+            <motion.div
               key={step.id}
-              className="flex gap-4 sm:gap-6 items-start group"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: '-100px' }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="group relative pl-10 md:pl-16"
             >
-              {/* Step Number */}
-              <div className="flex-shrink-0">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-black dark:bg-white text-white dark:text-black rounded-full flex items-center justify-center text-lg sm:text-xl font-light group-hover:scale-110 transition-transform duration-200">
-                  {index + 1}
+              <div className="absolute -left-[17px] top-1">
+                <div className="flex h-8 w-8 items-center justify-center rounded-full border-4 border-slate-950 bg-white shadow-xl transition-all duration-300 group-hover:scale-125 group-hover:border-cyan-500 dark:border-cyan-300/30 dark:bg-slate-950">
+                  <div className="h-2 w-2 rounded-full bg-slate-950 transition-colors group-hover:bg-cyan-500 dark:bg-white" />
                 </div>
               </div>
 
-              {/* Step Content */}
-              <div className="flex-1 bg-white dark:bg-gray-900 p-6 sm:p-8 rounded-lg border border-gray-200 dark:border-gray-700 group-hover:shadow-lg transition-all duration-300">
-                <h3 className="text-lg sm:text-xl font-medium text-black dark:text-white mb-3">{step.title}</h3>
-                <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed">{step.description}</p>
-              </div>
+              <span className="absolute -left-12 -top-10 -z-10 select-none text-8xl font-bold text-slate-100 transition-transform group-hover:-translate-y-2 group-hover:text-slate-200 dark:text-slate-900/50 dark:group-hover:text-slate-800">
+                0{index + 1}
+              </span>
 
-              {/* Connector Line */}
-              {index < process.length - 1 && (
-                <div className="absolute left-6 mt-12 w-0.5 h-16 bg-gray-200 dark:bg-gray-700 hidden md:block" />
-              )}
-            </div>
+              <div className="surface-card rounded-[2rem] p-8 shadow-lg transition-all duration-500 hover:-translate-y-2 group-hover:shadow-2xl sm:p-10">
+                <h3 className="mb-4 text-2xl font-bold tracking-tight text-slate-950 dark:text-white sm:text-3xl">
+                  {step.title}
+                </h3>
+                <p className="text-base font-medium leading-8 text-slate-600 dark:text-slate-400 sm:text-lg">
+                  {step.description}
+                </p>
+              </div>
+            </motion.div>
           ))}
         </div>
 
-        {/* Commitment Box */}
-        <div className="mt-12 sm:mt-16 bg-black dark:bg-white text-white dark:text-black p-6 sm:p-8 rounded-lg text-center">
-          <h3 className="text-xl sm:text-2xl font-light mb-4">My Commitment</h3>
-          <p className="text-sm sm:text-base text-gray-300 dark:text-gray-700 max-w-2xl mx-auto">
-            I don't just deliver code—I deliver solutions that work, scale, and provide real value. 
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="relative mt-24 overflow-hidden rounded-[2.25rem] bg-slate-950 p-10 text-center text-white shadow-xl sm:mt-32 sm:p-12 dark:bg-slate-900"
+        >
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-cyan-400/15 to-transparent" />
+          <h3 className="relative z-10 mb-6 text-3xl font-bold tracking-tight">
+            My Commitment
+          </h3>
+          <p className="relative z-10 mx-auto max-w-3xl text-lg font-medium leading-8 text-slate-300 sm:text-xl">
+            I don't just deliver code - I deliver solutions that work, scale, and provide real value.
             Every project gets my full attention, clear communication, and a commitment to excellence.
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

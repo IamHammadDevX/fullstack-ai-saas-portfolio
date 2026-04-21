@@ -12,52 +12,50 @@ const GitHub = () => {
   ];
 
   return (
-    <section id="github" className="py-16 sm:py-24 px-4 sm:px-6 bg-white dark:bg-gray-900">
-      <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
-        <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-black dark:text-white mb-4 tracking-tight">
+    <section id="github" className="section-shell">
+      <div className="section-container">
+        <div className="mb-12 text-center sm:mb-16">
+          <span className="section-kicker">GitHub</span>
+          <h2 className="text-3xl font-bold tracking-tight text-slate-950 dark:text-white sm:text-4xl md:text-5xl">
             GitHub Activity
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="mx-auto mt-4 max-w-2xl text-base text-slate-600 dark:text-slate-400 sm:text-lg">
             Consistent contributions and open-source engagement
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
-          {/* Stats Grid */}
           <div className="grid grid-cols-2 gap-4">
             {stats.map((stat, index) => {
               const IconComponent = stat.icon;
               return (
                 <Card
                   key={index}
-                  className="border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                  className="surface-card rounded-[1.75rem] border transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                 >
                   <CardContent className="pt-6">
-                    <IconComponent className="text-gray-400 dark:text-gray-500 mb-3" size={24} />
-                    <div className="text-2xl sm:text-3xl font-light text-black dark:text-white mb-1">{stat.value}</div>
-                    <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">{stat.label}</div>
+                    <IconComponent className="mb-3 text-cyan-600 dark:text-cyan-300" size={24} />
+                    <div className="mb-1 text-2xl font-bold text-slate-950 dark:text-white sm:text-3xl">{stat.value}</div>
+                    <div className="text-xs text-slate-600 dark:text-slate-400 sm:text-sm">{stat.label}</div>
                   </CardContent>
                 </Card>
               );
             })}
           </div>
 
-          {/* Language Distribution */}
-          <Card className="border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+          <Card className="surface-card rounded-[2rem] border">
             <CardContent className="pt-6">
-              <h3 className="text-lg sm:text-xl font-medium text-black dark:text-white mb-6">Top Languages</h3>
+              <h3 className="mb-6 text-lg font-bold text-slate-950 dark:text-white sm:text-xl">Top Languages</h3>
               <div className="space-y-4">
                 {githubStats.topLanguages.map((lang, index) => (
                   <div key={index}>
-                    <div className="flex justify-between text-xs sm:text-sm mb-2">
-                      <span className="text-gray-700 dark:text-gray-300 font-medium">{lang.name}</span>
-                      <span className="text-gray-600 dark:text-gray-400">{lang.percentage}%</span>
+                    <div className="mb-2 flex justify-between text-xs sm:text-sm">
+                      <span className="font-medium text-slate-700 dark:text-slate-300">{lang.name}</span>
+                      <span className="text-slate-600 dark:text-slate-400">{lang.percentage}%</span>
                     </div>
-                    <div className="w-full bg-gray-100 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
+                    <div className="h-2 w-full overflow-hidden rounded-full bg-slate-200 dark:bg-slate-800">
                       <div
-                        className="h-full bg-black dark:bg-white transition-all duration-500"
+                        className="h-full bg-gradient-to-r from-cyan-500 to-teal-500 transition-all duration-500"
                         style={{ width: `${lang.percentage}%` }}
                       />
                     </div>
@@ -65,11 +63,10 @@ const GitHub = () => {
                 ))}
               </div>
 
-              {/* Contribution Streak */}
-              <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+              <div className="mt-8 border-t border-slate-200 pt-6 dark:border-slate-800">
                 <div className="flex items-center justify-between">
-                  <span className="text-sm sm:text-base text-gray-700 dark:text-gray-300 font-medium">Current Streak</span>
-                  <span className="text-xl sm:text-2xl font-light text-black dark:text-white">
+                  <span className="text-sm font-medium text-slate-700 dark:text-slate-300 sm:text-base">Current Streak</span>
+                  <span className="text-xl font-bold text-slate-950 dark:text-white sm:text-2xl">
                     {githubStats.contributionStreak} days
                   </span>
                 </div>

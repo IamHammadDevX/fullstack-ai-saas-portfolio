@@ -1,63 +1,103 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { about, personalInfo } from '../mock';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, GraduationCap, MapPin } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="py-16 sm:py-24 px-4 sm:px-6 bg-gray-50 dark:bg-gray-800">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-start">
-          {/* Left Column - Story */}
-          <div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-black dark:text-white mb-6 tracking-tight">
-              About Me
+    <section id="about" className="section-shell section-shell--muted overflow-hidden">
+      <div className="absolute -right-12 top-12 h-72 w-72 rounded-full bg-cyan-200/30 blur-3xl dark:bg-cyan-500/10" />
+      <div className="absolute -left-10 bottom-0 h-80 w-80 rounded-full bg-teal-200/20 blur-3xl dark:bg-teal-500/10" />
+
+      <div className="section-container">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid items-start gap-10 lg:grid-cols-12 lg:gap-16"
+        >
+          <div className="lg:col-span-7">
+            <span className="section-kicker">About</span>
+            <h2 className="section-title text-slate-950 dark:text-slate-50">
+              A builder who cares about the product, not just the code.
             </h2>
-            <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="glass-card mt-8 rounded-[2rem] p-8 sm:p-10">
               {about.story.split('\n\n').map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
+                <p
+                  key={index}
+                  className={`text-base leading-8 text-slate-600 dark:text-slate-400 sm:text-lg ${index > 0 ? 'mt-6' : ''}`}
+                >
+                  {paragraph}
+                </p>
               ))}
             </div>
 
-            {/* Education & Location */}
-            <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 space-y-3">
-              <div className="flex items-start text-gray-700 dark:text-gray-300">
-                <span className="font-medium mr-2">Education:</span>
-                <span>{personalInfo.education}</span>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              <div className="surface-card flex items-center gap-4 rounded-[1.5rem] px-6 py-5 transition-transform duration-300 hover:-translate-y-1">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-100 text-cyan-700 dark:bg-cyan-400/10 dark:text-cyan-300">
+                  <GraduationCap size={24} strokeWidth={1.5} />
+                </div>
+                <div>
+                  <div className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">Education</div>
+                  <div className="mt-1 text-sm font-semibold text-slate-900 dark:text-slate-100">{personalInfo.education}</div>
+                </div>
               </div>
-              <div className="flex items-center text-gray-700 dark:text-gray-300">
-                <span className="font-medium mr-2">Location:</span>
-                <span>{personalInfo.location}</span>
+              <div className="surface-card flex items-center gap-4 rounded-[1.5rem] px-6 py-5 transition-transform duration-300 hover:-translate-y-1">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-700 dark:bg-emerald-400/10 dark:text-emerald-300">
+                  <MapPin size={24} strokeWidth={1.5} />
+                </div>
+                <div>
+                  <div className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">Location</div>
+                  <div className="mt-1 text-sm font-semibold text-slate-900 dark:text-slate-100">{personalInfo.location}</div>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Right Column - Highlights */}
-          <div>
-            <div className="bg-white dark:bg-gray-900 p-6 sm:p-8 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
-              <h3 className="text-xl sm:text-2xl font-light text-black dark:text-white mb-6">Key Highlights</h3>
-              <ul className="space-y-4">
+          <div className="lg:col-span-5 space-y-6">
+            <motion.div 
+              whileHover={{ y: -5 }}
+              className="surface-card rounded-[2rem] p-8 transition-all duration-300 sm:p-10"
+            >
+              <div className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-300">Key Highlights</div>
+              <h3 className="mt-4 text-2xl font-bold text-slate-950 dark:text-white">How I approach client work</h3>
+              <ul className="space-y-5">
                 {about.highlights.map((highlight, index) => (
-                  <li key={index} className="flex items-start">
-                    <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-black dark:text-white mr-3 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm sm:text-base text-gray-700 dark:text-gray-300">{highlight}</span>
+                  <motion.li 
+                    key={index}
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    className="flex items-start group"
+                  >
+                    <div className="mt-1 mr-4 rounded-full border border-cyan-200 bg-cyan-50 p-1.5 text-cyan-700 transition-transform group-hover:scale-110 dark:border-cyan-400/20 dark:bg-cyan-400/10 dark:text-cyan-300">
+                      <CheckCircle2 className="h-5 w-5" strokeWidth={2} />
+                    </div>
+                    <span className="text-base font-medium leading-relaxed text-slate-600 dark:text-slate-400">{highlight}</span>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
+
+            <motion.div 
+              whileHover={{ y: -5 }}
+              className="relative overflow-hidden rounded-[2rem] bg-slate-950 p-8 text-white shadow-2xl shadow-slate-900/15 transition-all duration-300 sm:p-10 dark:bg-slate-900"
+            >
+              <div className="absolute right-0 top-0 h-36 w-36 rounded-bl-full bg-cyan-400/10" />
+              <div className="relative z-10 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200/80">What I Value</div>
+              <h3 className="relative z-10 mt-4 text-2xl font-bold tracking-tight">Long-term product thinking.</h3>
+              <ul className="relative z-10 mt-6 space-y-4 text-sm font-medium text-slate-300 sm:text-base">
+                {['Clean, maintainable code', 'Transparent communication', 'On-time delivery', 'Long-term partnerships', 'Continuous learning'].map((val, idx) => (
+                  <li key={idx} className="flex items-center gap-3">
+                    <span className="h-2 w-2 rounded-full bg-cyan-300" />
+                    {val}
                   </li>
                 ))}
               </ul>
-            </div>
-
-            {/* What I Value */}
-            <div className="mt-6 sm:mt-8 bg-black dark:bg-white text-white dark:text-black p-6 sm:p-8 rounded-lg">
-              <h3 className="text-lg sm:text-xl font-light mb-4">What I Value</h3>
-              <ul className="space-y-3 text-xs sm:text-sm text-gray-300 dark:text-gray-700">
-                <li>• Clean, maintainable code</li>
-                <li>• Transparent communication</li>
-                <li>• On-time delivery</li>
-                <li>• Long-term partnerships</li>
-                <li>• Continuous learning</li>
-              </ul>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
