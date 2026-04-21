@@ -7,9 +7,11 @@ const TechStack = () => {
   const categories = [
     { title: 'Frontend', items: techStack.frontend, delay: 0.1 },
     { title: 'Backend', items: techStack.backend, delay: 0.2 },
-    { title: 'Database', items: techStack.database, delay: 0.3 },
-    { title: 'AI/ML', items: techStack.aiml, delay: 0.4 },
-    { title: 'DevOps', items: techStack.devops, delay: 0.5 }
+    { title: 'Databases', items: techStack.databases, delay: 0.3 },
+    { title: 'DevOps / Cloud', items: techStack.devopsCloud, delay: 0.4 },
+    { title: 'AI / LLM', items: techStack.aiMl, delay: 0.5 },
+    { title: 'Blockchain', items: techStack.blockchain, delay: 0.6 },
+    { title: 'Trading', items: techStack.trading, delay: 0.7 }
   ];
 
   return (

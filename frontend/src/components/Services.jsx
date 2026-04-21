@@ -5,8 +5,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/
 import * as LucideIcons from 'lucide-react';
 import { CheckCircle2 } from 'lucide-react';
 
-const serviceIcons = ['Code2', 'Layers', 'Brain', 'Database', 'Wrench', 'Rocket'];
-
 const Services = () => {
   return (
     <section id="services" className="section-shell">
@@ -28,7 +26,7 @@ const Services = () => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service, index) => {
-            const IconComponent = LucideIcons[serviceIcons[index % serviceIcons.length]];
+            const IconComponent = LucideIcons[service.icon] || LucideIcons.Terminal;
             return (
               <motion.div
                 key={service.id}

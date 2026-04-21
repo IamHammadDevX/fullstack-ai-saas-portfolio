@@ -82,22 +82,42 @@ const Projects = () => {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                       loading="lazy"
                     />
-                    <div className="absolute bottom-4 right-4 z-20">
-                      <button className="translate-y-12 rounded-full bg-white/90 p-3 opacity-0 shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-110 group-hover:translate-y-0 group-hover:opacity-100 dark:bg-slate-950/90">
-                        <ExternalLink size={20} className="text-slate-900 dark:text-white" />
-                      </button>
-                    </div>
+                    {project.liveUrl && (
+                      <div className="absolute bottom-4 right-4 z-20">
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`Open ${project.title}`}
+                          className="translate-y-12 rounded-full bg-white/90 p-3 opacity-0 shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-110 group-hover:translate-y-0 group-hover:opacity-100 dark:bg-slate-950/90 block"
+                        >
+                          <ExternalLink size={20} className="text-slate-900 dark:text-white" />
+                        </a>
+                      </div>
+                    )}
                   </div>
 
                   <CardHeader className="pt-8 pb-4 px-8">
                     <div className="flex items-start justify-between">
                       <div className="flex-1">
-                        <Badge className="mb-4 border-0 bg-cyan-100 px-3 py-1 text-xs font-bold uppercase tracking-[0.22em] text-cyan-700 hover:bg-cyan-200 dark:bg-cyan-400/10 dark:text-cyan-300">
-                          {project.category}
-                        </Badge>
+                        <div className="mb-4 flex flex-wrap items-center gap-2">
+                          <Badge className="border-0 bg-cyan-100 px-3 py-1 text-xs font-bold uppercase tracking-[0.22em] text-cyan-700 hover:bg-cyan-200 dark:bg-cyan-400/10 dark:text-cyan-300">
+                            {project.category}
+                          </Badge>
+                          {project.highlightBadge && (
+                            <Badge className="border-0 bg-emerald-100 px-3 py-1 text-xs font-bold uppercase tracking-[0.22em] text-emerald-700 hover:bg-emerald-200 dark:bg-emerald-400/10 dark:text-emerald-300">
+                              {project.highlightBadge}
+                            </Badge>
+                          )}
+                        </div>
                         <CardTitle className="mb-2 text-2xl font-bold text-slate-950 dark:text-white sm:text-3xl">
                           {project.title}
                         </CardTitle>
+                        {project.tagline && (
+                          <p className="text-sm font-semibold text-slate-500 dark:text-slate-400">
+                            {project.tagline}
+                          </p>
+                        )}
                       </div>
                     </div>
                   </CardHeader>

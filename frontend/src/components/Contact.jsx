@@ -41,7 +41,7 @@ const Contact = () => {
           <Sparkles className="mx-auto mb-8 h-12 w-12 text-cyan-300" />
 
           <h2 className="relative z-10 mb-6 text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-            Let's build a portfolio-worthy product.
+            Let's Build Something Great
           </h2>
           <p className="relative z-10 mx-auto mb-10 max-w-2xl text-lg font-medium text-slate-300 sm:text-xl">
             Have a project in mind? I'm ready to turn your vision into reality with modern tech and clean code.

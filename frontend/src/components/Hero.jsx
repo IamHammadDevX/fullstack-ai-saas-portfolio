@@ -50,6 +50,20 @@ const Hero = () => {
             </span>
           </motion.h1>
 
+          <motion.a
+            variants={itemVariants}
+            href="https://thevulnguardai.tech"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex w-fit items-center gap-3 rounded-full bg-slate-950 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-slate-900/15 transition-transform hover:-translate-y-0.5 hover:bg-slate-900 dark:bg-slate-900 dark:text-slate-100"
+          >
+            <span className="relative flex h-3 w-3">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" />
+              <span className="relative inline-flex h-3 w-3 rounded-full bg-red-500" />
+            </span>
+            <span>{'LIVE \u2014 VulnGuard AI \u00B7 thevulnguardai.tech'}</span>
+          </motion.a>
+
           <motion.p variants={itemVariants} className="mt-6 max-w-2xl text-lg font-semibold text-slate-700 dark:text-slate-300 sm:text-xl">
             {personalInfo.title} <span className="mx-2 text-slate-300 dark:text-slate-600">/</span> {personalInfo.experience}
           </motion.p>
@@ -79,7 +93,7 @@ const Hero = () => {
           <motion.div variants={containerVariants} className="mt-12 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             {[
               { label: 'Years Experience', value: '3.5+' },
-              { label: 'Projects Shipped', value: '35+' },
+              { label: 'Projects Shipped', value: '55+' },
               { label: 'Client Satisfaction', value: '100%' },
               { label: 'Remote Delivery', value: 'Worldwide' },
             ].map((stat, i) => (
