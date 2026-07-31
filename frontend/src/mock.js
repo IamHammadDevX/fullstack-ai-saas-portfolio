@@ -1,12 +1,12 @@
 export const personalInfo = {
   name: "Hammad",
   username: "HammadDevx",
-  title: "Full-Stack AI Developer | Backend Systems Architect | ML Engineer",
+  title: "Full-Stack Engineer | Backend Systems Architect | Agentic AI Developer",
   tagline: "I build scalable SaaS and AI-powered systems that grow businesses.",
   description:
-    "3.5+ years building AI SaaS products, backend systems, real-time dashboards, and automation tools for startups, clients, and remote product teams. Currently working remotely at Vughy Inc while studying Computer Science at UET Lahore.",
-  education: "CS Student - UET Lahore (Batch 2023, 6th Semester)",
-  experience: "3.5+ years",
+    "4 years building AI SaaS products, backend systems, real-time dashboards, and automation tools for startups, clients, and remote product teams. Currently working remotely at Vughy Inc while studying Computer Science at UET Lahore.",
+  education: "CS Student - UET Lahore (Batch 2023, 7th Semester)",
+  experience: "4 years",
   location: "Pakistan (Remote)",
   availability: "Available for Freelance Projects"
 };
@@ -14,7 +14,7 @@ export const personalInfo = {
 export const about = {
   story: `Hi, I'm Hammad - a full-stack AI developer focused on shipping production-ready SaaS products, backend systems, and ML-powered workflows.
 
-I work remotely with Vughy Inc in the USA while also studying Computer Science at UET Lahore. Over the past 3.5+ years, I have built products across AI SaaS, smart contract security, real-time systems, financial dashboards, algorithmic trading, and internal business tooling.
+I work remotely with Vughy Inc in the USA while also studying Computer Science at UET Lahore. Over the past 4 years, I have built products across AI SaaS, smart contract security, real-time systems, financial dashboards, algorithmic trading, and internal business tooling.
 
 My core stack spans Node.js, Python, TypeScript, React, Next.js 14, PostgreSQL, MongoDB, Redis, Docker, Kubernetes, AWS, Claude API, OpenRouter, Deepgram, vector search systems, MQL5, and CodeIgniter. I enjoy building the systems behind the product just as much as the polished user experience in front of it.
 
@@ -264,83 +264,90 @@ export const projects = [
       "https://images.unsplash.com/photo-1726776230751-183496c51f00?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjBtYW5hZ2VtZW50fGVufDB8fHx8MTc2OTE4MjkxNnww&ixlib=rb-4.1.0&q=85"
   },
   {
-    id: 11,
+    id: 18,
     title: "VisaHub",
-    tagline: "Visa Discovery · TravelTech · Next.js",
+    tagline: "Visa Discovery ï¿½ TravelTech ï¿½ Next.js",
     category: "Full-Stack SaaS",
     problem: "Travelers struggle to compare visa requirements across countries.",
     solution: "Compare, apply for, and track visas across 150+ countries.",
     tech: ["Next.js 16", "TypeScript", "Tailwind CSS v4", "TanStack Query", "Zod"],
     outcome: "Live visa application platform.",
+    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&q=80&w=1200",
     liveUrl: "https://visa-hub-mu.vercel.app/",
     repoUrl: "https://github.com/IamHammadDevX/VisaHub"
   },
   {
-    id: 12,
+    id: 19,
     title: "Classroom Monitor",
-    tagline: "Deep Learning · Computer Vision · FastAPI",
+    tagline: "Deep Learning ï¿½ Computer Vision ï¿½ FastAPI",
     category: "Deep Learning",
     problem: "Classrooms need faster, objective behavior insights.",
     solution: "MobileNetV2 and Vision Transformer models detect five behaviors with OOD rejection.",
     tech: ["MobileNetV2", "Vision Transformer", "TensorFlow.js", "FastAPI", "Docker"],
     outcome: "Real-time browser-based behavior detection.",
+    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&q=80&w=1200",
     repoUrl: "https://github.com/IamHammadDevX/Student-abnormal-behavior-detection-system-using-CNN"
   },
   {
-    id: 13,
+    id: 20,
     title: "RAG Knowledge Intelligence",
-    tagline: "Enterprise AI · RAG · Knowledge Graphs",
+    tagline: "Enterprise AI ï¿½ RAG ï¿½ Knowledge Graphs",
     category: "Agentic AI",
     problem: "Organizations need grounded answers from internal data.",
     solution: "Ingest documents, retrieve Pinecone context, and generate grounded answers.",
     tech: ["Next.js 16", "FastAPI", "Pinecone", "Groq", "HuggingFace"],
     outcome: "Enterprise knowledge hub and AI workspace.",
+    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=1200",
     repoUrl: "https://github.com/IamHammadDevX/Rag-Knowledge-Based-System"
   },
   {
-    id: 14,
+    id: 21,
     title: "VoiceVerse AI Studio",
-    tagline: "Voice AI · Desktop App · PyQt5",
+    tagline: "Voice AI ï¿½ Desktop App ï¿½ PyQt5",
     category: "AI Applications",
     problem: "Creators need voice and language tools in one workspace.",
     solution: "Desktop studio for speech, translation, voice chat, and conversational AI.",
     tech: ["Python", "PyQt5", "Groq", "gTTS", "Cohere"],
     outcome: "All-in-one AI voice workflow.",
+    image: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&q=80&w=1200",
     repoUrl: "https://github.com/IamHammadDevX/Voice-Verse-ai"
   },
   {
-    id: 15,
+    id: 22,
     title: "Exam Gen",
-    tagline: "EdTech · AI Automation · Web App",
+    tagline: "EdTech ï¿½ AI Automation ï¿½ Web App",
     category: "EdTech",
     problem: "Educators need faster ways to create structured exams.",
     solution: "Web platform for generating and managing assessment content.",
     tech: ["Web App", "AI Workflows", "TypeScript"],
     outcome: "Live exam generation application.",
+    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=1200",
     liveUrl: "https://v-exam.online/Exam-Gen-dev/",
     repoUrl: "https://github.com/IamHammadDevX/Exam-Gen-App"
   },
   {
-    id: 16,
+    id: 23,
     title: "IAmStillHere",
-    tagline: "Memorial Platform · PHP · PostgreSQL",
+    tagline: "Memorial Platform ï¿½ PHP ï¿½ PostgreSQL",
     category: "Social Platforms",
     problem: "Families need a private place to preserve memories.",
     solution: "Memorial platform for timelines, tributes, media, and privacy controls.",
     tech: ["PHP 8.4", "PostgreSQL", "Bootstrap 5", "Vanilla JavaScript"],
     outcome: "Live memorial and legacy platform.",
+    image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=1200",
     liveUrl: "https://www.iamalwayshere.com/",
     repoUrl: "https://github.com/IamHammadDevX/IAmStillHere-Eternal-Legacy-Platform"
   },
   {
-    id: 17,
+    id: 24,
     title: "YouTube Finder",
-    tagline: "Desktop Analytics · Python · Automation",
+    tagline: "Desktop Analytics ï¿½ Python ï¿½ Automation",
     category: "Developer Tools",
     problem: "Researchers need efficient bulk YouTube analysis.",
     solution: "Local tool for discovery, filtering, scheduling, and CSV export.",
     tech: ["Python", "YouTube API", "CSV Export", "GUI Automation"],
     outcome: "Cross-platform, quota-aware research tool.",
+    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1200",
     repoUrl: "https://github.com/IamHammadDevX/Youtube-Data-Finder"
   },];
 
@@ -352,7 +359,7 @@ export const testimonials = [
     company: "TechStart Inc, USA",
     text: "Hammad delivered our SaaS MVP in record time without cutting corners. His code quality and communication were exceptional. We've since hired him for three more projects.",
     rating: 5,
-    platform: "Upwork"
+    platform: "Freelancer"
   },
   {
     id: 3,
@@ -361,7 +368,7 @@ export const testimonials = [
     company: "FinVest, USA (NY)",
     text: "Hammad transformed our trading platform. His attention to performance and user experience made a huge difference. The system handles thousands of concurrent users flawlessly.",
     rating: 5,
-    platform: "Upwork"
+    platform: "Freelancer"
   },
   {
     id: 4,
@@ -370,7 +377,7 @@ export const testimonials = [
     company: "HR Solutions Co, USA",
     text: "The AI resume screening system Hammad built saved our clients hundreds of hours. His ML expertise and ability to deliver production-ready code is outstanding.",
     rating: 5,
-    platform: "Fiverr"
+    platform: "Upwork"
   },
   {
     id: 5,
@@ -379,7 +386,7 @@ export const testimonials = [
     company: "CloudTech Systems, USA",
     text: "Hammad's expertise in full-stack development is remarkable. He delivered a complex real-time system with clean architecture and excellent documentation. Highly recommended!",
     rating: 5,
-    platform: "Upwork"
+    platform: "Freelancer"
   },
   {
     id: 6,
@@ -438,5 +445,7 @@ export const contact = {
     { platform: "Instagram", url: "https://instagram.com/hi_itshammad", icon: "Instagram" }
   ]
 };
+
+
 
 
