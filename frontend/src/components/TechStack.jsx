@@ -11,7 +11,6 @@ const TechStack = () => {
     { title: 'DevOps / Cloud', items: techStack.devopsCloud, delay: 0.4 },
     { title: 'AI / LLM', items: techStack.aiMl, delay: 0.5 },
     { title: 'Blockchain', items: techStack.blockchain, delay: 0.6 },
-    { title: 'Trading', items: techStack.trading, delay: 0.7 }
   ];
 
   return (
@@ -75,3 +74,4 @@ const TechStack = () => {
 };
 
 export default TechStack;
+

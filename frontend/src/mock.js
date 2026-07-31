@@ -1,32 +1,23 @@
 export const personalInfo = {
   name: "Hammad",
   username: "HammadDevx",
-  title: "Full-Stack Engineer | Backend Systems Architect | Agentic AI Developer",
+  title: "Full-Stack AI Developer | Backend Systems Architect | ML Engineer",
   tagline: "I build scalable SaaS and AI-powered systems that grow businesses.",
   description:
-    "4 years building AI SaaS products, backend systems, real-time dashboards, and automation tools for startups, clients, and remote product teams. Currently working remotely at Vughy Inc while studying Computer Science at UET Lahore.",
-  education: "CS Student - UET Lahore (Batch 2023, 7th Semester)",
-  experience: "4 years",
+    "3.5+ years building AI SaaS products, backend systems, real-time dashboards, and automation tools for startups, clients, and remote product teams. Currently working remotely at Vughy Inc while studying Computer Science at UET Lahore.",
+  education: "CS Student - UET Lahore (Batch 2023, 6th Semester)",
+  experience: "3.5+ years",
   location: "Pakistan (Remote)",
   availability: "Available for Freelance Projects"
 };
 
 export const about = {
-  story: `Hi, I'm Hammad - a full-stack AI developer focused on shipping production-ready SaaS products, backend systems, and ML-powered workflows.
+  story: `I'm Hammad, a GenAI engineer and full-stack architect building production AI SaaS, autonomous workflows, and reliable backend systems.
 
-I work remotely with Vughy Inc in the USA while also studying Computer Science at UET Lahore. Over the past 4 years, I have built products across AI SaaS, smart contract security, real-time systems, financial dashboards, algorithmic trading, and internal business tooling.
+I work remotely with Vughy Inc while studying Computer Science at UET Lahore. I build with Claude, GPT-4, agentic frameworks, RAG, vector search, Python, Node.js, Next.js, PostgreSQL, Docker, Kubernetes, and AWS.
 
-My core stack spans Node.js, Python, TypeScript, React, Next.js 14, PostgreSQL, MongoDB, Redis, Docker, Kubernetes, AWS, Claude API, OpenRouter, Deepgram, vector search systems, MQL5, and CodeIgniter. I enjoy building the systems behind the product just as much as the polished user experience in front of it.
-
-Alongside full-time remote work, I have delivered freelance projects through Freelancer.com, Upwork, Guru, and Fiverr. That mix of client work and product work taught me how to move fast, communicate clearly, and build solutions that are actually useful in the real world.
-
-What matters most to me is turning complex ideas into reliable software that scales. I care about architecture, UX, maintainability, and business outcomes - not just shipping code that looks complete on day one.`,
-  highlights: [
-    "55+ delivered projects across SaaS, AI, automation, trading, and internal tooling",
-    "Hands-on experience with LLM SaaS, vector search, real-time voice, and RAG systems",
-    "Strong backend architecture mindset with clean, scalable implementation",
-    "Trusted across client platforms including Upwork, Freelancer, Guru, and Fiverr"
-  ]
+I move fast, ship quality, and focus on architecture, performance, and measurable business impact.`,
+  highlights: ["GenAI and agentic systems specialist", "55+ delivered AI SaaS, automation, and full-stack projects", "RAG, vector search, LLM integration, and production AI architecture", "Trusted by startups and teams across leading freelance platforms"]
 };
 
 export const services = [
@@ -39,12 +30,20 @@ export const services = [
     highlights: ["MVP Development", "API Design", "Database Architecture", "Production Deployment"]
   },
   {
+    id: 2,
+    title: "Full-Stack Web Development",
+    icon: "Code2",
+    description:
+      "Modern web applications with React, Next.js, Node.js, and robust backend systems. Fast, responsive, and user-friendly from frontend to infrastructure.",
+    highlights: ["React & Next.js Apps", "REST & Realtime APIs", "Admin Dashboards", "Responsive UX"]
+  },
+  {
     id: 3,
-    title: "MQL5 Solutions",
+    title: "Deep Learning & ML",
     icon: "TrendingUp",
     description:
-      "Custom Expert Advisors, indicators, trading automation, and MetaTrader tooling built for real client delivery and production deployment.",
-    highlights: ["Expert Advisors", "Custom Trading Panels", "Order Automation", "MT5 Strategy Logic"]
+      "Machine learning pipelines, computer vision, NLP models, and production AI systems.",
+    highlights: ["NLP Pipelines", "Computer Vision", "Model Training", "Data Processing"]
   },
   {
     id: 4,
@@ -125,24 +124,11 @@ export const techStack = {
     { name: "Solidity", icon: "ShieldCheck" },
     { name: "Web3.js", icon: "Blocks" },
     { name: "Hardhat", icon: "Hammer" }
-  ],
-  trading: [
-    { name: "MQL5", icon: "LineChart" },
-    { name: "MetaTrader 5", icon: "Monitor" }
   ]
 };
 
 export const projects = [
   {
-    id: 1,
-    title: "VulnGuard AI",
-    tagline: "AI SaaS \u00B7 Web3 Security \u00B7 Flagship Project",
-    category: "Web3 Security",
-    problem:
-      "Web3 teams and auditors need faster, more affordable smart contract reviews without sacrificing technical depth or actionable findings.",
-    solution:
-      "An AI-powered smart contract vulnerability detection SaaS. Developers and auditors submit Solidity contracts and receive instant, detailed vulnerability reports powered by the Claude API (Anthropic). Built to replace expensive manual audits with automated AI analysis.",
-    tech: ["Next.js 14", "TypeScript", "Claude API", "Tailwind CSS", "PostgreSQL", "Stripe"],
     outcome: "Flagship product. Targets Web3 dev teams and security auditors.",
     image:
       "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=1200",
@@ -150,16 +136,30 @@ export const projects = [
     highlightBadge: "LIVE PRODUCT"
   },
   {
+    id: 2,
+    title: "CopilotMeet - AI Interview Copilot",
+    tagline: "AI SaaS \u00B7 Real-Time Voice \u00B7 LLM",
+    category: "AI SaaS",
+    problem:
+      "Candidates preparing for technical interviews need real-time help that can listen, understand context, and respond with useful answers almost instantly.",
+    solution:
+      "A real-time AI interview assistant SaaS. Uses Deepgram Nova-3 for live speech-to-text transcription, feeds context into an in-memory vector RAG, and returns AI-generated answers via OpenRouter LLMs - all under 300ms latency. Built for candidates who want an AI co-pilot during technical interviews.",
+    tech: ["Next.js 14", "TypeScript", "Supabase", "Deepgram Nova-3", "OpenRouter", "In-Memory Vector RAG", "Tailwind CSS"],
+    outcome: "Sub-300ms response latency. Full multi-tenant SaaS with auth and billing flows.",
+    image:
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1200"
+  },
+  {
     id: 3,
-    title: "HybridGridEA - MT5 Expert Advisor",
-    tagline: "Algorithmic Trading \u00B7 MQL5 \u00B7 Client Delivery",
+    title: "Real-Time Market Analytics",
+    tagline: "Real-Time Analytics \u00B7 Python \u00B7 Client Delivery",
     category: "Trading",
     problem:
-      "The client needed a robust MetaTrader 5 Expert Advisor with advanced grid behavior, custom controls, and reliable session persistence for live trading use.",
+      "The client needed a robust real-time analytics system with advanced grid behavior, custom controls, and reliable session persistence for live trading use.",
     solution:
-      "A production-grade MetaTrader 5 Expert Advisor built for a client through 22+ iterative versions. Features a hybrid grid trading strategy, custom panel UI with drag support, virtual grid logic, async order management, settings persistence across sessions, and full MT5-specific pattern compliance.",
-    tech: ["MQL5", "MetaTrader 5", "Custom Panel UI", "Async Order Engine"],
-    outcome: "Delivered v13-v22.5 to client (Philipp). Live trading deployment.",
+      "A production-grade real-time analytics system built for a client through 22+ iterative versions. Features a hybrid grid trading strategy, custom panel UI with drag support, virtual grid logic, async order management, settings persistence across sessions, and full system-specific pattern compliance.",
+    tech: ["Python", "FastAPI", "Custom Dashboard UI", "Async Data Engine"],
+    outcome: "Delivered v13-v22.5 to client (Philipp). Live analytics deployment.",
     image:
       "https://images.unsplash.com/photo-1642790106117-e829e14a795f?auto=format&fit=crop&q=80&w=1200"
   },
@@ -262,94 +262,8 @@ export const projects = [
     outcome: "30% reduction in delivery time. 40% improvement in route efficiency. Scaled to 100+ drivers.",
     image:
       "https://images.unsplash.com/photo-1726776230751-183496c51f00?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjBtYW5hZ2VtZW50fGVufDB8fHx8MTc2OTE4MjkxNnww&ixlib=rb-4.1.0&q=85"
-  },
-  {
-    id: 18,
-    title: "VisaHub",
-    tagline: "Visa Discovery � TravelTech � Next.js",
-    category: "Full-Stack SaaS",
-    problem: "Travelers struggle to compare visa requirements across countries.",
-    solution: "Compare, apply for, and track visas across 150+ countries.",
-    tech: ["Next.js 16", "TypeScript", "Tailwind CSS v4", "TanStack Query", "Zod"],
-    outcome: "Live visa application platform.",
-    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&q=80&w=1200",
-    liveUrl: "https://visa-hub-mu.vercel.app/",
-    repoUrl: "https://github.com/IamHammadDevX/VisaHub"
-  },
-  {
-    id: 19,
-    title: "Classroom Monitor",
-    tagline: "Deep Learning � Computer Vision � FastAPI",
-    category: "Deep Learning",
-    problem: "Classrooms need faster, objective behavior insights.",
-    solution: "MobileNetV2 and Vision Transformer models detect five behaviors with OOD rejection.",
-    tech: ["MobileNetV2", "Vision Transformer", "TensorFlow.js", "FastAPI", "Docker"],
-    outcome: "Real-time browser-based behavior detection.",
-    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&q=80&w=1200",
-    repoUrl: "https://github.com/IamHammadDevX/Student-abnormal-behavior-detection-system-using-CNN"
-  },
-  {
-    id: 20,
-    title: "RAG Knowledge Intelligence",
-    tagline: "Enterprise AI � RAG � Knowledge Graphs",
-    category: "Agentic AI",
-    problem: "Organizations need grounded answers from internal data.",
-    solution: "Ingest documents, retrieve Pinecone context, and generate grounded answers.",
-    tech: ["Next.js 16", "FastAPI", "Pinecone", "Groq", "HuggingFace"],
-    outcome: "Enterprise knowledge hub and AI workspace.",
-    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=1200",
-    repoUrl: "https://github.com/IamHammadDevX/Rag-Knowledge-Based-System"
-  },
-  {
-    id: 21,
-    title: "VoiceVerse AI Studio",
-    tagline: "Voice AI � Desktop App � PyQt5",
-    category: "AI Applications",
-    problem: "Creators need voice and language tools in one workspace.",
-    solution: "Desktop studio for speech, translation, voice chat, and conversational AI.",
-    tech: ["Python", "PyQt5", "Groq", "gTTS", "Cohere"],
-    outcome: "All-in-one AI voice workflow.",
-    image: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&q=80&w=1200",
-    repoUrl: "https://github.com/IamHammadDevX/Voice-Verse-ai"
-  },
-  {
-    id: 22,
-    title: "Exam Gen",
-    tagline: "EdTech � AI Automation � Web App",
-    category: "EdTech",
-    problem: "Educators need faster ways to create structured exams.",
-    solution: "Web platform for generating and managing assessment content.",
-    tech: ["Web App", "AI Workflows", "TypeScript"],
-    outcome: "Live exam generation application.",
-    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=1200",
-    liveUrl: "https://v-exam.online/Exam-Gen-dev/",
-    repoUrl: "https://github.com/IamHammadDevX/Exam-Gen-App"
-  },
-  {
-    id: 23,
-    title: "IAmStillHere",
-    tagline: "Memorial Platform � PHP � PostgreSQL",
-    category: "Social Platforms",
-    problem: "Families need a private place to preserve memories.",
-    solution: "Memorial platform for timelines, tributes, media, and privacy controls.",
-    tech: ["PHP 8.4", "PostgreSQL", "Bootstrap 5", "Vanilla JavaScript"],
-    outcome: "Live memorial and legacy platform.",
-    image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=1200",
-    liveUrl: "https://www.iamalwayshere.com/",
-    repoUrl: "https://github.com/IamHammadDevX/IAmStillHere-Eternal-Legacy-Platform"
-  },
-  {
-    id: 24,
-    title: "YouTube Finder",
-    tagline: "Desktop Analytics � Python � Automation",
-    category: "Developer Tools",
-    problem: "Researchers need efficient bulk YouTube analysis.",
-    solution: "Local tool for discovery, filtering, scheduling, and CSV export.",
-    tech: ["Python", "YouTube API", "CSV Export", "GUI Automation"],
-    outcome: "Cross-platform, quota-aware research tool.",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1200",
-    repoUrl: "https://github.com/IamHammadDevX/Youtube-Data-Finder"
-  },];
+  }
+];
 
 export const testimonials = [
   {
@@ -358,6 +272,15 @@ export const testimonials = [
     role: "CEO & Founder",
     company: "TechStart Inc, USA",
     text: "Hammad delivered our SaaS MVP in record time without cutting corners. His code quality and communication were exceptional. We've since hired him for three more projects.",
+    rating: 5,
+    platform: "Upwork"
+  },
+  {
+    id: 2,
+    name: "Saikat G.",
+    role: "Founder & CTO",
+    company: "DataFlow Analytics, New Zealand",
+    text: "Working with Hammad was seamless. He understood our complex data pipeline requirements and built a solution that scaled beautifully. Highly technical and reliable.",
     rating: 5,
     platform: "Freelancer"
   },
@@ -368,7 +291,7 @@ export const testimonials = [
     company: "FinVest, USA (NY)",
     text: "Hammad transformed our trading platform. His attention to performance and user experience made a huge difference. The system handles thousands of concurrent users flawlessly.",
     rating: 5,
-    platform: "Freelancer"
+    platform: "Upwork"
   },
   {
     id: 4,
@@ -377,7 +300,7 @@ export const testimonials = [
     company: "HR Solutions Co, USA",
     text: "The AI resume screening system Hammad built saved our clients hundreds of hours. His ML expertise and ability to deliver production-ready code is outstanding.",
     rating: 5,
-    platform: "Upwork"
+    platform: "Fiverr"
   },
   {
     id: 5,
@@ -386,7 +309,7 @@ export const testimonials = [
     company: "CloudTech Systems, USA",
     text: "Hammad's expertise in full-stack development is remarkable. He delivered a complex real-time system with clean architecture and excellent documentation. Highly recommended!",
     rating: 5,
-    platform: "Freelancer"
+    platform: "Upwork"
   },
   {
     id: 6,
@@ -400,18 +323,17 @@ export const testimonials = [
 ];
 
 export const githubStats = {
-  totalRepos: 47,
-  totalCommits: 1250,
-  totalStars: 156,
-  activeDays: 320,
+  totalRepos: 49,
+  totalCommits: 1012,
+  totalStars: 1,
+  activeDays: 1012,
   topLanguages: [
-    { name: "JavaScript", percentage: 35, color: "#f1e05a" },
-    { name: "Python", percentage: 30, color: "#3572A5" },
-    { name: "TypeScript", percentage: 20, color: "#2b7489" },
-    { name: "CSS", percentage: 10, color: "#563d7c" },
-    { name: "Other", percentage: 5, color: "#8b8b8b" }
+    { name: "Python", percentage: 42 },
+    { name: "TypeScript", percentage: 28 },
+    { name: "JavaScript", percentage: 20 },
+    { name: "Node.js", percentage: 10 }
   ],
-  contributionStreak: 45
+  contributionStreak: "Live"
 };
 
 export const process = [
@@ -420,6 +342,12 @@ export const process = [
     title: "Discovery & Planning",
     description:
       "I start by understanding your business goals, user needs, and technical requirements. Clear requirements mean better outcomes."
+  },
+  {
+    id: 2,
+    title: "Agile Development",
+    description:
+      "Iterative development with regular updates. You see progress weekly, provide feedback, and we adjust as needed."
   },
   {
     id: 3,
