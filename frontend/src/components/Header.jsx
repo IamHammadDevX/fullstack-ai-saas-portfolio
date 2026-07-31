@@ -4,6 +4,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from './ui/button';
 import { useTheme } from '../context/ThemeContext';
 
+const freelanceProfiles = [
+  { label: 'Contra', href: 'https://contra.com/iamhammaddevx' },
+  // Add the remaining profile URLs when provided.
+  { label: 'Fiverr', href: 'https://www.fiverr.com/s/yv7mzwq' },
+  { label: 'Upwork', href: 'https://www.upwork.com/freelancers/~015f36a0fd4944aca1?mp_source=share' },
+  { label: 'Workana', href: 'https://www.workana.com/freelancer/4207c40786c67f42a7c9cde56427076d' },
+  { label: 'ComeUp', href: 'https://comeup.com/en/@hammad-1' },
+];
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -83,6 +92,7 @@ const Header = () => {
             </div>
             
             <div className="ml-4 flex items-center space-x-3 border-l border-slate-200/70 pl-4 dark:border-slate-800/80">
+              <div className="contra-hire-me-button hidden lg:block" data-analyticsUserId="6401fba4-0bef-4278-a817-300abb290e9c" data-theme={theme} data-username="iamhammaddevx" />
               <button
                 onClick={toggleTheme}
                 className="focus-ring glass-card flex h-11 w-11 items-center justify-center rounded-full text-slate-600 hover:-translate-y-0.5 hover:text-slate-950 dark:text-slate-300 dark:hover:text-white"
@@ -176,3 +186,8 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
+
+
