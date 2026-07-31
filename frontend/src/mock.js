@@ -129,7 +129,14 @@ export const techStack = {
 
 export const projects = [
   {
-    outcome: "Flagship product. Targets Web3 dev teams and security auditors.",
+    id: 1,
+    title: "VulnGuard AI",
+    tagline: "AI SaaS · Web3 Security · Flagship Project",
+    category: "Web3 Security",
+    problem: "Smart contract audits are expensive, slow, and inaccessible.",
+    solution: "AI-powered Solidity vulnerability scanner with instant Claude-powered audit reports.",
+    tech: ["Next.js 14", "TypeScript", "Claude API", "PostgreSQL", "Stripe"],
+    outcome: "Flagship live product for Web3 teams and auditors.",
     image:
       "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=1200",
     liveUrl: "https://thevulnguardai.tech",
@@ -373,6 +380,7 @@ export const contact = {
     { platform: "Instagram", url: "https://instagram.com/hi_itshammad", icon: "Instagram" }
   ]
 };
+
 
 
 
