@@ -3,7 +3,16 @@ import { motion } from 'framer-motion';
 import { contact } from '../mock';
 import { Button } from './ui/button';
 import * as LucideIcons from 'lucide-react';
-import { ArrowRight, Mail, Sparkles } from 'lucide-react';
+import { ArrowRight, ExternalLink, Mail, Sparkles } from 'lucide-react';
+
+const freelanceProfiles = [
+  { label: 'Contra', short: 'C', href: 'https://contra.com/iamhammaddevx', accent: 'from-cyan-400 to-blue-500' },
+  { label: 'Fiverr', short: 'F', href: 'https://www.fiverr.com/s/yv7mzwq', accent: 'from-green-400 to-emerald-600' },
+  { label: 'Upwork', short: 'U', href: 'https://www.upwork.com/freelancers/~015f36a0fd4944aca1?mp_source=share', accent: 'from-emerald-400 to-teal-600' },
+  { label: 'Workana', short: 'W', href: 'https://www.workana.com/freelancer/4207c40786c67f42a7c9cde56427076d', accent: 'from-violet-400 to-purple-600' },
+  { label: 'ComeUp', short: 'K', href: 'https://comeup.com/en/@hammad-1', accent: 'from-orange-400 to-rose-500' },
+  { label: 'Freelancer', short: 'FL', href: 'https://www.freelancer.com/u/Thisishammaddevx', accent: 'from-blue-400 to-indigo-600' },
+];
 
 const Contact = () => {
   return (
@@ -29,7 +38,22 @@ const Contact = () => {
           </div>
         </motion.div>
 
-        <motion.div
+        <div id="freelance-profiles" className="mb-16">
+          <div className="mb-8 text-center sm:text-left">
+            <span className="section-kicker">Work with me</span>
+            <h3 className="mt-4 text-3xl font-bold tracking-tight text-slate-950 dark:text-white sm:text-4xl">Find me on your favorite freelance platform.</h3>
+            <p className="mt-3 max-w-2xl text-base leading-7 text-slate-600 dark:text-slate-400">Choose the platform that works best for you and let us build something useful, polished, and built to last.</p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {freelanceProfiles.map((profile) => (
+              <a key={profile.label} href={profile.href} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 rounded-[1.75rem] border border-slate-200/70 bg-white/75 p-5 shadow-lg backdrop-blur-xl transition-all hover:-translate-y-1 hover:shadow-2xl dark:border-slate-800 dark:bg-slate-900/70" aria-label={"Open " + profile.label + " profile"}>
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-600 text-sm font-black text-white shadow-lg">{profile.short}</span>
+                <span className="min-w-0"><span className="block text-lg font-bold text-slate-950 dark:text-white">{profile.label}</span><span className="block text-sm text-slate-500 dark:text-slate-400">View profile</span></span>
+                <ExternalLink className="ml-auto h-5 w-5 shrink-0 text-slate-400 transition-transform group-hover:translate-x-1 group-hover:text-cyan-500" />
+              </a>
+            ))}
+          </div>
+        </div>        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -104,3 +128,6 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+

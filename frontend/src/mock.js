@@ -1,143 +1,45 @@
 export const personalInfo = {
   name: "Hammad",
   username: "HammadDevx",
-  title: "Full-Stack AI Developer | Backend Systems Architect | ML Engineer",
-  tagline: "I build scalable SaaS and AI-powered systems that grow businesses.",
-  description:
-    "3.5+ years building AI SaaS products, backend systems, real-time dashboards, and automation tools for startups, clients, and remote product teams. Currently working remotely at Vughy Inc while studying Computer Science at UET Lahore.",
-  education: "CS Student - UET Lahore (Batch 2023, 6th Semester)",
-  experience: "3.5+ years",
+  title: "GenAI Engineer | Agentic Systems Architect | Full-Stack SaaS Developer",
+  tagline: "I build autonomous AI systems and scalable SaaS products that solve real problems.",
+  description: "4+ years shipping AI-powered SaaS, autonomous agents, LLM integrations, and production backend systems. GenAI specialist building with Claude, GPT-4, and emerging agentic frameworks. Remote Full-Stack Engineer at Vughy Inc. CS Student at UET Lahore.",
+  education: "CS Student - UET Lahore (Batch 2023, 7th Semester)",
+  experience: "4+ years",
   location: "Pakistan (Remote)",
-  availability: "Available for Freelance Projects"
+  availability: "Available for Freelance & Contract Work"
 };
 
 export const about = {
-  story: `Hi, I'm Hammad - a full-stack AI developer focused on shipping production-ready SaaS products, backend systems, and ML-powered workflows.
+  story: `I'm Hammad—a GenAI engineer and full-stack architect building autonomous systems and production AI SaaS.
 
-I work remotely with Vughy Inc in the USA while also studying Computer Science at UET Lahore. Over the past 3.5+ years, I have built products across AI SaaS, smart contract security, real-time systems, financial dashboards, algorithmic trading, and internal business tooling.
+Working remotely at Vughy Inc while studying CS at UET Lahore. Over 4 years, I've shipped AI-driven SaaS products, LLM-powered automation, multi-agent systems, real-time dashboards, and backend infrastructure at scale.
 
-My core stack spans Node.js, Python, TypeScript, React, Next.js 14, PostgreSQL, MongoDB, Redis, Docker, Kubernetes, AWS, Claude API, OpenRouter, Deepgram, vector search systems, MQL5, and CodeIgniter. I enjoy building the systems behind the product just as much as the polished user experience in front of it.
+My stack: GenAI (Claude, GPT-4, OpenRouter), agentic AI frameworks, LangChain, RAG systems, vector databases, Node.js/Python backends, Next.js frontends, PostgreSQL, Redis, Docker, Kubernetes, and AWS.
 
-Alongside full-time remote work, I have delivered freelance projects through Freelancer.com, Upwork, Guru, and Fiverr. That mix of client work and product work taught me how to move fast, communicate clearly, and build solutions that are actually useful in the real world.
-
-What matters most to me is turning complex ideas into reliable software that scales. I care about architecture, UX, maintainability, and business outcomes - not just shipping code that looks complete on day one.`,
-  highlights: [
-    "55+ delivered projects across SaaS, AI, automation, trading, and internal tooling",
-    "Hands-on experience with LLM SaaS, vector search, real-time voice, and RAG systems",
-    "Strong backend architecture mindset with clean, scalable implementation",
-    "Trusted across client platforms including Upwork, Freelancer, Guru, and Fiverr"
-  ]
+I move fast. I ship quality. I care about architecture, performance, and business impact—not buzzwords.`,
+  highlights: ["GenAI & Agentic AI specialist—Claude, GPT-4, multi-agent orchestration, autonomous workflows", "55+ delivered projects across AI SaaS, smart contract security, real-time systems, trading, and internal tooling", "Deep expertise in RAG pipelines, vector search, LLM fine-tuning, and production AI architecture", "5-star track record across Upwork, Freelancer, Guru, and Fiverr", "Full-stack capability across backend architecture, AWS/Docker/Kubernetes, and polished UX", "Currently studying CS at UET Lahore while shipping production AI systems remotely"]
 };
 
 export const services = [
-  {
-    id: 1,
-    title: "SaaS Development",
-    icon: "Rocket",
-    description:
-      "Full product lifecycle from MVP to production. Scalable architecture, clean codebase, and business-focused solutions for modern SaaS products.",
-    highlights: ["MVP Development", "API Design", "Database Architecture", "Production Deployment"]
-  },
-  {
-    id: 2,
-    title: "Full-Stack Web Development",
-    icon: "Code2",
-    description:
-      "Modern web applications with React, Next.js, Node.js, and robust backend systems. Fast, responsive, and user-friendly from frontend to infrastructure.",
-    highlights: ["React & Next.js Apps", "REST & Realtime APIs", "Admin Dashboards", "Responsive UX"]
-  },
-  {
-    id: 3,
-    title: "MQL5 Solutions",
-    icon: "TrendingUp",
-    description:
-      "Custom Expert Advisors, indicators, trading automation, and MetaTrader tooling built for real client delivery and production deployment.",
-    highlights: ["Expert Advisors", "Custom Trading Panels", "Order Automation", "MT5 Strategy Logic"]
-  },
-  {
-    id: 4,
-    title: "AI Engineering & Analytics",
-    icon: "BarChart3",
-    description:
-      "Data-heavy AI systems, analytics workflows, financial dashboards, and backend pipelines that turn complex inputs into actionable outputs.",
-    highlights: ["Analytics Dashboards", "Data Pipelines", "Financial Metrics", "ML-Ready Backends"]
-  },
-  {
-    id: 5,
-    title: "Bug Fixing & Optimization",
-    icon: "Wrench",
-    description:
-      "Debug complex issues, reduce technical debt, and optimize performance across frontend apps, APIs, databases, and production systems.",
-    highlights: ["Performance Tuning", "Code Review", "Technical Debt Reduction", "System Monitoring"]
-  },
-  {
-    id: 6,
-    title: "AI & LLM Integration",
-    icon: "Brain",
-    description:
-      "End-to-end AI feature development - RAG pipelines, LLM API integration (Claude, OpenAI, OpenRouter), real-time voice AI with Deepgram, vector databases, autonomous agent workflows, and production AI SaaS architecture.",
-    highlights: [
-      "RAG & Vector Search Systems",
-      "Claude / OpenAI / OpenRouter APIs",
-      "Real-Time Voice AI (Deepgram)",
-      "AI Agent & Automation Workflows",
-      "LLM-Powered SaaS Products"
-    ]
-  },
-  {
-    id: 7,
-    title: "Web3 & Smart Contract Security",
-    icon: "ShieldCheck",
-    description:
-      "Smart contract auditing and security analysis powered by AI. Vulnerability detection for Solidity contracts, audit report generation, and Web3 SaaS tooling for DeFi teams and blockchain developers.",
-    highlights: [
-      "Solidity Smart Contract Auditing",
-      "AI-Powered Vulnerability Detection",
-      "Web3 SaaS Product Development",
-      "DeFi Security Tooling",
-      "Audit Report Generation"
-    ]
-  }
+  { id: 1, title: "GenAI & LLM SaaS", icon: "Sparkles", description: "End-to-end AI product development with RAG, LLM APIs, vector search, fine-tuning, and production-grade architecture.", highlights: ["RAG Pipelines", "Vector Databases", "LLM Integration", "Fine-Tuning", "Prompt Engineering"] },
+  { id: 2, title: "Agentic AI & Automation", icon: "Zap", description: "Multi-agent systems and autonomous workflows that reason, plan, and execute with minimal human intervention.", highlights: ["Multi-Agent Orchestration", "Autonomous Workflows", "Agent Memory & State", "Tool Integration", "LLM Automation"] },
+  { id: 3, title: "Full-Stack SaaS", icon: "Rocket", description: "MVP to scale with modern architecture, clean code, and business-focused delivery across Next.js, Node.js, and Python.", highlights: ["MVP Development", "API Design", "Database Architecture", "Production Deployment"] },
+  { id: 4, title: "Real-Time Systems", icon: "Activity", description: "WebSocket apps, live dashboards, streaming data, and real-time AI for trading, analytics, and collaboration.", highlights: ["WebSocket Architecture", "Real-Time Dashboards", "Stream Processing", "Live Analytics", "Latency Optimization"] },
+  { id: 5, title: "Web3 & Security", icon: "ShieldCheck", description: "AI-powered smart contract auditing, vulnerability detection, DeFi tooling, and production Web3 systems.", highlights: ["AI Contract Auditing", "Solidity Analysis", "Vulnerability Detection", "Audit Reports", "DeFi SaaS"] },
+  { id: 6, title: "Deep Learning & ML", icon: "Brain", description: "Machine learning pipelines, computer vision, NLP models, and data-heavy AI systems from prototype to production.", highlights: ["NLP Pipelines", "Computer Vision", "Model Training", "Data Processing", "ML Infrastructure"] },
+  { id: 7, title: "Bug Fixing & Optimization", icon: "Wrench", description: "Debug production issues, reduce technical debt, and optimize frontend, backend, database, and infrastructure performance.", highlights: ["Performance Tuning", "Code Review", "Technical Debt", "System Monitoring"] }
 ];
 
 export const techStack = {
-  frontend: [
-    { name: "Next.js", icon: "Layout" },
-    { name: "React", icon: "Atom" },
-    { name: "TypeScript", icon: "FileCode" },
-    { name: "Tailwind CSS", icon: "Paintbrush" }
-  ],
-  backend: [
-    { name: "Node.js", icon: "Server" },
-    { name: "Python", icon: "Terminal" },
-    { name: "PHP / CodeIgniter", icon: "Braces" }
-  ],
-  databases: [
-    { name: "PostgreSQL", icon: "Database" },
-    { name: "MongoDB", icon: "HardDrive" },
-    { name: "MySQL", icon: "Cylinder" },
-    { name: "Redis", icon: "Layers3" }
-  ],
-  devopsCloud: [
-    { name: "Docker", icon: "Container" },
-    { name: "Kubernetes", icon: "Network" },
-    { name: "AWS", icon: "Cloud" }
-  ],
-  aiMl: [
-    { name: "Claude API", icon: "Brain" },
-    { name: "OpenRouter", icon: "Workflow" },
-    { name: "Deepgram", icon: "AudioLines" },
-    { name: "LangChain", icon: "GitBranch" }
-  ],
-  blockchain: [
-    { name: "Solidity", icon: "ShieldCheck" },
-    { name: "Web3.js", icon: "Blocks" },
-    { name: "Hardhat", icon: "Hammer" }
-  ],
-  trading: [
-    { name: "MQL5", icon: "LineChart" },
-    { name: "MetaTrader 5", icon: "Monitor" }
-  ]
+  genaiAgentic: [{ name: "Claude API", icon: "Brain" }, { name: "GPT-4 / OpenAI", icon: "MessageSquare" }, { name: "Agentic Frameworks", icon: "Network" }, { name: "LangChain", icon: "GitBranch" }, { name: "LangGraph", icon: "GitGraph" }],
+  aiMl: [{ name: "LLM Fine-Tuning", icon: "Zap" }, { name: "RAG Systems", icon: "Database" }, { name: "Vector Search", icon: "Search" }, { name: "Deep Learning", icon: "TrendingUp" }, { name: "OpenRouter", icon: "Workflow" }],
+  frontend: [{ name: "Next.js 14", icon: "Layout" }, { name: "React", icon: "Atom" }, { name: "TypeScript", icon: "FileCode" }, { name: "Tailwind CSS", icon: "Paintbrush" }],
+  backend: [{ name: "Node.js", icon: "Server" }, { name: "Python", icon: "Terminal" }, { name: "FastAPI", icon: "Zap" }, { name: "PHP / CodeIgniter", icon: "Braces" }],
+  databases: [{ name: "PostgreSQL", icon: "Database" }, { name: "MongoDB", icon: "HardDrive" }, { name: "Redis", icon: "Layers3" }, { name: "Pinecone", icon: "Pin" }],
+  devopsCloud: [{ name: "Docker", icon: "Container" }, { name: "Kubernetes", icon: "Network" }, { name: "AWS", icon: "Cloud" }, { name: "CI/CD", icon: "Workflow" }],
+  blockchain: [{ name: "Solidity", icon: "ShieldCheck" }, { name: "Web3.js", icon: "Blocks" }, { name: "Hardhat", icon: "Hammer" }],
+  trading: [{ name: "MQL5", icon: "LineChart" }, { name: "MetaTrader 5", icon: "Monitor" }]
 };
 
 export const projects = [
@@ -147,9 +49,9 @@ export const projects = [
     tagline: "AI SaaS \u00B7 Web3 Security \u00B7 Flagship Project",
     category: "Web3 Security",
     problem:
-      "Web3 teams and auditors need faster, more affordable smart contract reviews without sacrificing technical depth or actionable findings.",
+      "Smart contract audits are expensive, slow, and inaccessible.",
     solution:
-      "An AI-powered smart contract vulnerability detection SaaS. Developers and auditors submit Solidity contracts and receive instant, detailed vulnerability reports powered by the Claude API (Anthropic). Built to replace expensive manual audits with automated AI analysis.",
+      "AI-powered Solidity vulnerability scanner. Upload a contract and get instant Claude-powered audit reports.",
     tech: ["Next.js 14", "TypeScript", "Claude API", "Tailwind CSS", "PostgreSQL", "Stripe"],
     outcome: "Flagship product. Targets Web3 dev teams and security auditors.",
     image:
@@ -163,9 +65,9 @@ export const projects = [
     tagline: "AI SaaS \u00B7 Real-Time Voice \u00B7 LLM",
     category: "AI SaaS",
     problem:
-      "Candidates preparing for technical interviews need real-time help that can listen, understand context, and respond with useful answers almost instantly.",
+      "Interview candidates need real-time AI help that listens and responds instantly.",
     solution:
-      "A real-time AI interview assistant SaaS. Uses Deepgram Nova-3 for live speech-to-text transcription, feeds context into an in-memory vector RAG, and returns AI-generated answers via OpenRouter LLMs - all under 300ms latency. Built for candidates who want an AI co-pilot during technical interviews.",
+      "Real-time interview copilot. Deepgram transcribes, vector RAG retrieves context, and OpenRouter generates answers in under 300ms.",
     tech: ["Next.js 14", "TypeScript", "Supabase", "Deepgram Nova-3", "OpenRouter", "In-Memory Vector RAG", "Tailwind CSS"],
     outcome: "Sub-300ms response latency. Full multi-tenant SaaS with auth and billing flows.",
     image:
@@ -177,9 +79,9 @@ export const projects = [
     tagline: "Algorithmic Trading \u00B7 MQL5 \u00B7 Client Delivery",
     category: "Trading",
     problem:
-      "The client needed a robust MetaTrader 5 Expert Advisor with advanced grid behavior, custom controls, and reliable session persistence for live trading use.",
+      "Traders needed adaptive strategies with reliable execution and session persistence.",
     solution:
-      "A production-grade MetaTrader 5 Expert Advisor built for a client through 22+ iterative versions. Features a hybrid grid trading strategy, custom panel UI with drag support, virtual grid logic, async order management, settings persistence across sessions, and full MT5-specific pattern compliance.",
+      "Production MT5 Expert Advisor with hybrid grid logic, custom controls, async orders, and persistent settings.",
     tech: ["MQL5", "MetaTrader 5", "Custom Panel UI", "Async Order Engine"],
     outcome: "Delivered v13-v22.5 to client (Philipp). Live trading deployment.",
     image:
@@ -191,9 +93,9 @@ export const projects = [
     tagline: "Document Automation \u00B7 Publishing \u00B7 XML Pipeline",
     category: "Automation",
     problem:
-      "Academic publishing workflows were slowed down by manual typesetting, repetitive formatting work, and inconsistent export pipelines across publishing formats.",
+      "Publishing teams needed faster, consistent document production.",
     solution:
-      "A fully automated academic journal production pipeline. Accepts raw manuscript inputs and outputs publication-ready PDF, HTML, and JATS XML formats with full OJS (Open Journal Systems) compatibility. Built for a publisher client to eliminate manual typesetting.",
+      "Automated manuscript-to-PDF, HTML, and JATS XML pipeline with OJS integration.",
     tech: ["Python", "LaTeX", "JATS XML", "HTML", "OJS Integration", "PDF Generation"],
     outcome: "Eliminated manual typesetting. Full OJS-compatible output pipeline.",
     image:
@@ -205,9 +107,9 @@ export const projects = [
     tagline: "SaaS Metrics \u00B7 Internal Tool \u00B7 Full-Stack",
     category: "Internal Tools",
     problem:
-      "Leadership needed a reliable internal dashboard to track subscription health, revenue movement, and retention trends across the full SaaS financial funnel.",
+      "Leadership needed real-time visibility into SaaS revenue and retention health.",
     solution:
-      "A comprehensive financial metrics dashboard built for Vughy Inc (my employer). Tracks and visualizes MRR, ARR, churn rate, LTV, geographic revenue breakdown, and subscription cohort analytics. Designed for executive-level SaaS decision making.",
+      "Executive dashboard for MRR, ARR, churn, LTV, revenue geography, and cohort analytics.",
     tech: ["CodeIgniter", "MySQL", "Chart.js", "PHP", "Bootstrap"],
     outcome: "Used internally at Vughy Inc. Covers full SaaS financial metric suite.",
     image:
@@ -396,3 +298,7 @@ export const contact = {
     { platform: "Instagram", url: "https://instagram.com/hi_itshammad", icon: "Instagram" }
   ]
 };
+
+
+
+
