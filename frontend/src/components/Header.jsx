@@ -5,12 +5,13 @@ import { Button } from './ui/button';
 import { useTheme } from '../context/ThemeContext';
 
 const freelanceProfiles = [
-  { label: 'Contra', href: 'https://contra.com/iamhammaddevx' },
+  { label: 'Contra', short: 'C', href: 'https://contra.com/iamhammaddevx', accent: 'bg-cyan-500/15 text-cyan-700 dark:text-cyan-300' },
   // Add the remaining profile URLs when provided.
-  { label: 'Fiverr', href: 'https://www.fiverr.com/s/yv7mzwq' },
-  { label: 'Upwork', href: 'https://www.upwork.com/freelancers/~015f36a0fd4944aca1?mp_source=share' },
-  { label: 'Workana', href: 'https://www.workana.com/freelancer/4207c40786c67f42a7c9cde56427076d' },
-  { label: 'ComeUp', href: 'https://comeup.com/en/@hammad-1' },
+  { label: 'Fiverr', short: 'F', href: 'https://www.fiverr.com/s/yv7mzwq', accent: 'bg-green-500/15 text-green-700 dark:text-green-300' },
+  { label: 'Upwork', short: 'U', href: 'https://www.upwork.com/freelancers/~015f36a0fd4944aca1?mp_source=share', accent: 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-300' },
+  { label: 'Workana', short: 'W', href: 'https://www.workana.com/freelancer/4207c40786c67f42a7c9cde56427076d', accent: 'bg-violet-500/15 text-violet-700 dark:text-violet-300' },
+  { label: 'ComeUp', short: 'K', href: 'https://comeup.com/en/@hammad-1', accent: 'bg-orange-500/15 text-orange-700 dark:text-orange-300' },
+  { label: 'Freelancer', short: 'FL', href: 'https://www.freelancer.com/u/Thisishammaddevx', accent: 'bg-blue-500/15 text-blue-700 dark:text-blue-300' },
 ];
 
 const Header = () => {
@@ -91,6 +92,14 @@ const Header = () => {
               ))}
             </div>
             
+            <div className="hidden max-w-[34rem] items-center gap-1.5 overflow-x-auto rounded-full border border-slate-200/70 bg-white/50 p-1.5 shadow-sm backdrop-blur-xl scrollbar-hide xl:flex dark:border-slate-800/80 dark:bg-slate-900/50">
+              {freelanceProfiles.map((profile) => (
+                <a key={profile.label} href={profile.href} target="_blank" rel="noopener noreferrer" className="focus-ring group inline-flex shrink-0 items-center gap-1.5 rounded-full px-2.5 py-1.5 text-xs font-bold text-slate-600 transition-all hover:-translate-y-0.5 hover:bg-white hover:text-slate-950 hover:shadow-sm dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white" aria-label={`Open ${profile.label} profile`}>
+                  <span className={`flex h-5 min-w-5 items-center justify-center rounded-full px-1 text-[10px] font-extrabold ${profile.accent}`}>{profile.short}</span>
+                  <span>{profile.label}</span>
+                </a>
+              ))}
+            </div>
             <div className="ml-4 flex items-center space-x-3 border-l border-slate-200/70 pl-4 dark:border-slate-800/80">
               <div className="contra-hire-me-button hidden lg:block" data-analyticsUserId="6401fba4-0bef-4278-a817-300abb290e9c" data-theme={theme} data-username="iamhammaddevx" />
               <button
@@ -163,6 +172,17 @@ const Header = () => {
                     {item.label}
                   </motion.a>
                 ))}
+                <div className="mt-2 border-t border-slate-200/70 pt-3 dark:border-slate-800">
+                  <p className="mb-2 px-4 text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Freelance Profiles</p>
+                  <div className="grid grid-cols-2 gap-2 min-[420px]:grid-cols-3">
+                    {freelanceProfiles.map((profile) => (
+                      <a key={profile.label} href={profile.href} target="_blank" rel="noopener noreferrer" className="focus-ring group flex items-center gap-2 rounded-2xl border border-slate-200/70 bg-white/60 px-3 py-2.5 text-sm font-bold text-slate-700 transition-all hover:-translate-y-0.5 hover:bg-white hover:shadow-sm dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-200 dark:hover:bg-slate-800" aria-label={`Open ${profile.label} profile`}>
+                        <span className={`flex h-7 min-w-7 items-center justify-center rounded-xl px-1 text-[10px] font-extrabold ${profile.accent}`}>{profile.short}</span>
+                        <span className="truncate">{profile.label}</span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
                 <motion.div
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
@@ -186,6 +206,10 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
+
 
 
 
