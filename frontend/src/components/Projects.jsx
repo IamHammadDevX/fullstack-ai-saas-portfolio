@@ -7,6 +7,7 @@ import { ExternalLink } from 'lucide-react';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
+  const [visibleCount, setVisibleCount] = useState(3);
 
   const categories = ['All', ...new Set(projects.map(p => p.category))];
 
@@ -42,7 +43,7 @@ const Projects = () => {
           {categories.map((category) => (
             <button
               key={category}
-              onClick={() => setActiveFilter(category)}
+              onClick={() => { setActiveFilter(category); setVisibleCount(3); }}
               className={`relative px-6 py-3 rounded-full text-sm font-semibold tracking-wide transition-all duration-300 ${
                 activeFilter === category
                   ? 'text-white dark:text-slate-950'
@@ -64,7 +65,7 @@ const Projects = () => {
         {/* Projects Grid */}
         <motion.div layout className="grid gap-8 sm:gap-10 lg:grid-cols-2">
           <AnimatePresence mode='popLayout'>
-            {filteredProjects.map((project) => (
+            {filteredProjects.slice(0, visibleCount).map((project) => (
               <motion.div
                 layout
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -119,7 +120,11 @@ const Projects = () => {
                           </p>
                         )}
                       </div>
-                    </div>
+                    </div>                    {project.repoUrl && (
+                      <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex items-center gap-2 text-sm font-bold text-cyan-600 hover:text-cyan-500 dark:text-cyan-300">
+                        View GitHub repository <ExternalLink size={14} />
+                      </a>
+                    )}
                   </CardHeader>
 
                   <CardContent className="px-8 pb-8 space-y-6">
@@ -161,9 +166,18 @@ const Projects = () => {
             ))}
           </AnimatePresence>
         </motion.div>
-      </div>
+        {visibleCount < filteredProjects.length && (
+          <div className="mt-12 flex justify-center">
+            <button onClick={() => setVisibleCount((count) => Math.min(count + 3, filteredProjects.length))} className="focus-ring rounded-full bg-slate-950 px-7 py-3.5 text-sm font-bold text-white shadow-xl transition hover:-translate-y-1 hover:bg-slate-800 dark:bg-cyan-300 dark:text-slate-950 dark:hover:bg-cyan-200">
+              Load more projects
+            </button>
+          </div>
+        )}      </div>
     </section>
   );
 };
 
 export default Projects;
+
+
+
