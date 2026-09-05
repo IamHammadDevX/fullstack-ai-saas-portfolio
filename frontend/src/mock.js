@@ -131,7 +131,7 @@ export const projects = [
   {
     id: 1,
     title: "VulnGuard AI",
-    tagline: "AI SaaS · Web3 Security · Flagship Project",
+    tagline: "AI SaaS \u00B7 Web3 Security \u00B7 Flagship Project",
     category: "Web3 Security",
     problem: "Smart contract audits are expensive, slow, and inaccessible.",
     solution: "AI-powered Solidity vulnerability scanner with instant Claude-powered audit reports.",
@@ -144,6 +144,21 @@ export const projects = [
   },
   {
     id: 2,
+    title: "IAAH - I Am Always Here",
+    tagline: "Digital Memorial & Family Legacy Platform \u00B7 AI SaaS \u00B7 Major Build",
+    category: "AI SaaS",
+    problem:
+      "Families lose access to a loved one's memories, stories, and presence over time, with no structured, private place to preserve and interact with a life story across generations.",
+    solution:
+      "A full-stack digital memorial and family legacy social platform. Combines memory uploads (photos, videos, documents), privacy-controlled wall posts, an expandable family tree, a personal-vs-historical world events timeline, and an interactive AI Avatar trained on a person's own memories and documents to answer questions in their voice. Includes a secure encrypted Vault with audit logging and multi-level privacy controls (Public, Friends, Family, Private).",
+    tech: ["Full-Stack", "LLM/AI Avatar", "Knowledge Base Indexing", "Encryption", "Privacy Architecture"],
+    outcome:
+      "Delivered as a major Phase 2 build with AI Avatar, AI Autobiography generation, family tree visualization, and timeline comparison. Client called the homepage \"excellent\" and the AI Avatar \"the star of the show.\"",
+    image:
+      "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=1200"
+  },
+  {
+    id: 3,
     title: "CopilotMeet - AI Interview Copilot",
     tagline: "AI SaaS \u00B7 Real-Time Voice \u00B7 LLM",
     category: "AI SaaS",
@@ -157,7 +172,7 @@ export const projects = [
       "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1200"
   },
   {
-    id: 3,
+    id: 4,
     title: "Real-Time Market Analytics",
     tagline: "Real-Time Analytics \u00B7 Python \u00B7 Client Delivery",
     category: "Trading",
@@ -171,7 +186,7 @@ export const projects = [
       "https://images.unsplash.com/photo-1642790106117-e829e14a795f?auto=format&fit=crop&q=80&w=1200"
   },
   {
-    id: 4,
+    id: 5,
     title: "Automated Journal Production System",
     tagline: "Document Automation \u00B7 Publishing \u00B7 XML Pipeline",
     category: "Automation",
@@ -185,7 +200,7 @@ export const projects = [
       "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=1200"
   },
   {
-    id: 5,
+    id: 6,
     title: "Vughy SaaS Financial Dashboard",
     tagline: "SaaS Metrics \u00B7 Internal Tool \u00B7 Full-Stack",
     category: "Internal Tools",
@@ -199,7 +214,7 @@ export const projects = [
       "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1200"
   },
   {
-    id: 6,
+    id: 7,
     title: "AI Resume Screening System",
     category: "AI/ML",
     problem: "HR teams were spending hours manually screening hundreds of resumes for open positions.",
@@ -211,7 +226,7 @@ export const projects = [
       "https://images.unsplash.com/photo-1763718528755-4bca23f82ac3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwxfHxBSSUyMHJlY3J1aXRtZW50fGVufDB8fHx8MTc2OTE4Mjg4N3ww&ixlib=rb-4.1.0&q=85"
   },
   {
-    id: 7,
+    id: 8,
     title: "Real-Time Stock Signal System",
     category: "FinTech",
     problem: "Traders needed instant alerts for market opportunities based on technical indicators.",
@@ -223,7 +238,7 @@ export const projects = [
       "https://images.unsplash.com/photo-1761850167081-473019536383?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxzdG9jayUyMHRyYWRpbmclMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzY5MTgyODk1fDA&ixlib=rb-4.1.0&q=85"
   },
   {
-    id: 8,
+    id: 9,
     title: "Time Tracker SaaS Platform",
     category: "SaaS",
     problem: "Freelancers and agencies lacked a simple, reliable tool to track billable hours across projects.",
@@ -235,7 +250,7 @@ export const projects = [
       "https://images.unsplash.com/photo-1671109704725-ad6d94cd723c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwzfHx0aW1lJTIwdHJhY2tpbmd8ZW58MHx8fHwxNzY5MTgyOTAyfDA&ixlib=rb-4.1.0&q=85"
   },
   {
-    id: 9,
+    id: 10,
     title: "FinTrade Trading Platform",
     category: "FinTech",
     problem: "Retail investors needed an intuitive platform for portfolio management and trading execution.",
@@ -247,7 +262,7 @@ export const projects = [
       "https://images.unsplash.com/photo-1766218334217-d2cc74c36fce?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwzfHx0cmFkaW5nJTIwcGxhdGZvcm18ZW58MHx8fHwxNzY5MTgyOTI0fDA&ixlib=rb-4.1.0&q=85"
   },
   {
-    id: 10,
+    id: 11,
     title: "AnonyChat - Anonymous Messaging",
     category: "Social",
     problem: "Users wanted secure, anonymous communication without complex setup or tracking.",
@@ -259,7 +274,7 @@ export const projects = [
       "https://images.unsplash.com/photo-1762330469637-dfbb6e014a16?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxzZWN1cmUlMjBtZXNzYWdpbmd8ZW58MHx8fHwxNzY5MTgyOTA5fDA&ixlib=rb-4.1.0&q=85"
   },
   {
-    id: 11,
+    id: 12,
     title: "Gas Distribution Management System",
     category: "Enterprise",
     problem: "Gas distribution company struggled with manual order management and route optimization.",
@@ -269,6 +284,52 @@ export const projects = [
     outcome: "30% reduction in delivery time. 40% improvement in route efficiency. Scaled to 100+ drivers.",
     image:
       "https://images.unsplash.com/photo-1726776230751-183496c51f00?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjBtYW5hZ2VtZW50fGVufDB8fHx8MTc2OTE4MjkxNnww&ixlib=rb-4.1.0&q=85"
+  },
+  {
+    id: 13,
+    title: "Orbit Controls - Industrial Panel Manufacturing Site",
+    tagline: "Client Website \u00B7 Industrial B2B \u00B7 Animated Frontend",
+    category: "Client Website",
+    problem:
+      "A USA-based industrial control panel manufacturer needed a modern, trust-building web presence to reach OEMs, system integrators, and machine builders, in an industry where most competitor sites look dated and generic.",
+    solution:
+      "A premium animated marketing site built around precision-manufacturing trust signals - UL 508A compliance, build-to-print production, and rigorous testing. Cinematic scroll reveals, staggered entrances, animated blueprint hero visuals, and a full quote-request flow, with SEO metadata and accessible markup across every route.",
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion", "Wouter"],
+    outcome: "Live production site for a USA industrial automation client.",
+    image:
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200",
+    liveUrl: "https://www.optimizecontrols.com",
+    repoUrl: "https://github.com/IamHammadDevX/control-panel-manufacturing-site"
+  },
+  {
+    id: 14,
+    title: "Overnight Mountings Image/Video Scraper",
+    tagline: "Web Scraping \u00B7 E-Commerce Data \u00B7 Automation",
+    category: "Automation",
+    problem:
+      "An e-commerce client's product catalog had thousands of product families with stale or missing image and video URLs that needed refreshing without risking the integrity of the source data.",
+    solution:
+      "A family-based Playwright and Chromium scraper that refreshes image and video URLs across 7,223 product families, updating the client's master Excel workbook while treating source files as read-only inputs that must never be overwritten.",
+    tech: ["Python", "Playwright", "Chromium", "Excel Automation"],
+    outcome: "Refreshed media URLs across 7,223 product families with zero source-file data loss.",
+    image:
+      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1200",
+    repoUrl: "https://github.com/IamHammadDevX/Overnight-Mountings-scraper"
+  },
+  {
+    id: 15,
+    title: "Real-Estate Public Notice Intelligence",
+    tagline: "AI-Assisted Scraping \u00B7 Real Estate Data \u00B7 Lead Generation",
+    category: "Automation",
+    problem:
+      "Real estate investors and wholesalers needed structured, enriched leads from public foreclosure and tax-sale notices, but raw legal notices from government portals are unstructured and hard to mine at scale.",
+    solution:
+      "An automated pipeline that scrapes public real estate notices (foreclosures, tax sales, trustee sales) from Georgia and North Carolina portals using Playwright, extracts structured data with regex and OpenAI-assisted parsing, stores it in MySQL with CSV fallback, enriches records via PropStream automation for owner/valuation/mortgage data, and exports consolidated CSV/XLSX/ZIP reports.",
+    tech: ["Python", "Playwright", "OpenAI API", "MySQL", "PropStream Automation"],
+    outcome: "End-to-end pipeline from raw legal notice to enriched, exportable lead data across two states.",
+    image:
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1200",
+    repoUrl: "https://github.com/IamHammadDevX/Real-Estate-Public-Notice-Intelligence"
   }
 ];
 
@@ -279,26 +340,23 @@ export const testimonials = [
     role: "CEO & Founder",
     company: "TechStart Inc, USA",
     text: "Hammad delivered our SaaS MVP in record time without cutting corners. His code quality and communication were exceptional. We've since hired him for three more projects.",
-    rating: 5,
-    platform: "Upwork"
+    rating: 5
   },
   {
     id: 2,
     name: "Saikat G.",
     role: "Founder & CTO",
-    company: "DataFlow Analytics, New Zealand",
+    company: "Professor, New Zealand",
     text: "Working with Hammad was seamless. He understood our complex data pipeline requirements and built a solution that scaled beautifully. Highly technical and reliable.",
-    rating: 5,
-    platform: "Freelancer"
+    rating: 5
   },
   {
     id: 3,
     name: "Kumar Visas",
     role: "Product Manager",
-    company: "FinVest, USA (NY)",
+    company: "Vughy Inc, USA (NY)",
     text: "Hammad transformed our trading platform. His attention to performance and user experience made a huge difference. The system handles thousands of concurrent users flawlessly.",
-    rating: 5,
-    platform: "Upwork"
+    rating: 5
   },
   {
     id: 4,
@@ -306,8 +364,7 @@ export const testimonials = [
     role: "CTO",
     company: "HR Solutions Co, USA",
     text: "The AI resume screening system Hammad built saved our clients hundreds of hours. His ML expertise and ability to deliver production-ready code is outstanding.",
-    rating: 5,
-    platform: "Fiverr"
+    rating: 5
   },
   {
     id: 5,
@@ -315,8 +372,7 @@ export const testimonials = [
     role: "VP Engineering",
     company: "CloudTech Systems, USA",
     text: "Hammad's expertise in full-stack development is remarkable. He delivered a complex real-time system with clean architecture and excellent documentation. Highly recommended!",
-    rating: 5,
-    platform: "Upwork"
+    rating: 5
   },
   {
     id: 6,
@@ -324,21 +380,20 @@ export const testimonials = [
     role: "Founder",
     company: "Digital Solutions, France",
     text: "Outstanding developer! Hammad built our entire SaaS platform from scratch. His ability to understand business requirements and translate them into elegant code is impressive.",
-    rating: 5,
-    platform: "Freelancer"
+    rating: 5
   }
 ];
 
 export const githubStats = {
-  totalRepos: 49,
+  totalRepos: 59,
   totalCommits: 1012,
   totalStars: 1,
   activeDays: 1012,
   topLanguages: [
-    { name: "Python", percentage: 42 },
-    { name: "TypeScript", percentage: 28 },
-    { name: "JavaScript", percentage: 20 },
-    { name: "Node.js", percentage: 10 }
+    { name: "Python", percentage: 67 },
+    { name: "TypeScript", percentage: 45 },
+    { name: "JavaScript", percentage: 40 },
+    { name: "Node.js", percentage: 39 }
   ],
   contributionStreak: "Live"
 };
@@ -380,8 +435,3 @@ export const contact = {
     { platform: "Instagram", url: "https://instagram.com/hi_itshammad", icon: "Instagram" }
   ]
 };
-
-
-
-
-
