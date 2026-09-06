@@ -1,4 +1,4 @@
-export const personalInfo = {
+﻿export const personalInfo = {
   name: "Hammad",
   username: "HammadDevx",
   title: "Full-Stack AI Developer | Backend Systems Architect | ML Engineer",
@@ -334,6 +334,14 @@ export const projects = [
 ];
 
 export const testimonials = [
+  {
+    id: 0,
+    name: "Muhammad Sharique",
+    role: "Telecommunication Officer",
+    company: "Germany",
+    text: "Hammad built CopilotMeet with strong technical execution and clear communication. The real-time AI interview experience was delivered with care and professionalism.",
+    rating: 5
+  },
   {
     id: 1,
     name: "Nicholas O.",
